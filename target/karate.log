@@ -9101,3 +9101,2184 @@ classpath:api/producto/eliminar.feature:44
   "path": "/api/v1/product/6689eade-aba1-4a53-8fb0-ee9debeee5f6/"
 }
  
+00:49:02.921 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:50:42.445 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:50:43.355 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:50:43.388 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:50:43.693 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:50:43.721 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:50:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"8e58fd6f-19f4-4100-9aff-7020f90e4740","status":true,"message":"El producto fue creado con éxito!"}
+
+00:50:43.724 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:50:43.729 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8e58fd6f-19f4-4100-9aff-7020f90e4740",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:50:43.740 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/8e58fd6f-19f4-4100-9aff-7020f90e4740/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:50:43.799 [main] DEBUG com.intuit.karate - response time in milliseconds: 59
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:50:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":90,"name":"Iphone 12","sku":"8e58fd6f-19f4-4100-9aff-7020f90e4740","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:52:26.265 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:52:27.155 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:52:27.190 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:52:27.510 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:52:27.541 [main] DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:52:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"4184dc23-59d7-4ead-9370-869391692f03","status":true,"message":"El producto fue creado con éxito!"}
+
+00:52:27.548 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:52:27.554 [main] INFO  com.intuit.karate - [print] {
+  "sku": "4184dc23-59d7-4ead-9370-869391692f03",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:52:27.571 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/4184dc23-59d7-4ead-9370-869391692f03/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:52:27.576 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:52:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":91,"name":"Iphone 12","sku":"4184dc23-59d7-4ead-9370-869391692f03","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:52:27.579 [main] INFO  com.intuit.karate - [print] {
+  "products": [
+    {
+      "id": 91,
+      "name": "Iphone 12",
+      "sku": "4184dc23-59d7-4ead-9370-869391692f03",
+      "description": "Este es un smartphone de alta gama",
+      "price": 1200.0
+    }
+  ],
+  "status": true,
+  "message": "El producto fue encontrado"
+}
+ 
+00:52:36.461 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:52:37.320 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:52:37.353 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:52:37.667 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:52:37.698 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:52:37 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"ad7afca2-daec-4ebc-80dd-ef50ac1315c2","status":true,"message":"El producto fue creado con éxito!"}
+
+00:52:37.702 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:52:37.708 [main] INFO  com.intuit.karate - [print] {
+  "sku": "ad7afca2-daec-4ebc-80dd-ef50ac1315c2",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:52:37.721 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/ad7afca2-daec-4ebc-80dd-ef50ac1315c2/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:52:37.727 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:52:37 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":92,"name":"Iphone 12","sku":"ad7afca2-daec-4ebc-80dd-ef50ac1315c2","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:52:37.730 [main] INFO  com.intuit.karate - [print] {
+  "products": [
+    {
+      "id": 92,
+      "name": "Iphone 12",
+      "sku": "ad7afca2-daec-4ebc-80dd-ef50ac1315c2",
+      "description": "Este es un smartphone de alta gama",
+      "price": 1200.0
+    }
+  ],
+  "status": true,
+  "message": "El producto fue encontrado"
+}
+ 
+00:55:12.158 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:55:13.070 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:55:13.107 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:55:13.417 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:55:13.450 [main] DEBUG com.intuit.karate - response time in milliseconds: 32
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:55:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","status":true,"message":"El producto fue creado con éxito!"}
+
+00:55:13.455 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:55:13.460 [main] INFO  com.intuit.karate - [print] {
+  "sku": "044fba7a-790d-4c10-9ad1-d72cf9457bbc",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:55:13.473 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/SKU_INEXISTENTE/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:55:13.480 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:55:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[],"status":false,"message":"El producto no fue encontrado"}
+
+00:55:13.488 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:26
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 6, url: http://localhost:8081/api/v1/product/SKU_INEXISTENTE/, response: 
+{"products":[],"status":false,"message":"El producto no fue encontrado"}
+classpath:api/producto/listar.feature:26
+00:55:13.513 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:55:13.518 [main] INFO  com.intuit.karate - [print] {
+  "sku": "044fba7a-790d-4c10-9ad1-d72cf9457bbc",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:55:13.522 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/044fba7a-790d-4c10-9ad1-d72cf9457bbc/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:55:13.527 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:55:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:55:13.528 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:35
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 5, url: http://localhost:8081/api/v1/product/044fba7a-790d-4c10-9ad1-d72cf9457bbc/, response: 
+{"products":[{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:35
+00:55:13.538 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:55:13.541 [main] INFO  com.intuit.karate - [print] {
+  "sku": "044fba7a-790d-4c10-9ad1-d72cf9457bbc",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:55:13.544 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/044fba7a-790d-4c10-9ad1-d72cf9457bbc/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:55:13.549 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:55:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:55:13.550 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:45
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 4, url: http://localhost:8081/api/v1/product/044fba7a-790d-4c10-9ad1-d72cf9457bbc/, response: 
+{"products":[{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:45
+00:55:13.560 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:55:13.564 [main] INFO  com.intuit.karate - [print] {
+  "sku": "044fba7a-790d-4c10-9ad1-d72cf9457bbc",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:55:13.567 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/044fba7a-790d-4c10-9ad1-d72cf9457bbc/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:55:13.571 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:55:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:55:13.570+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/044fba7a-790d-4c10-9ad1-d72cf9457bbc/"}
+
+00:55:13.573 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:55:13.570+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/044fba7a-790d-4c10-9ad1-d72cf9457bbc/"
+}
+ 
+00:56:48.568 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:56:49.471 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:56:49.512 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:56:49.827 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:56:49.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:56:49 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","status":true,"message":"El producto fue creado con éxito!"}
+
+00:56:49.856 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:56:49.862 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a072cc4e-9211-462e-a2c1-23d5c74e17ec",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:56:49.875 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:56:49.986 [main] DEBUG com.intuit.karate - response time in milliseconds: 111
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:56:49 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":1,"name":"Iphone 14","sku":"c9fe0d9b-b760-4f75-9166-84f8a54e4076","description":"Este es un smartphone de alta gama","price":1400.0},{"id":2,"name":"Iphone 12","sku":"13280820-37a9-4104-82f2-28d25947661d","description":"Este es un smartphone de alta gama","price":1200.0},{"id":3,"name":"Iphone 15","sku":"764742e5-cd29-48e9-924a-fdd70dc295eb","description":"Este es un smartphone de alta gama","price":1500.0},{"id":4,"name":"Iphone 15","sku":"4cd197c3-2ab6-4ef2-a839-7f42ab59e0ea","description":"Este es un smartphone de alta gama","price":1500.0},{"id":5,"name":"Iphone 16","sku":"8fb2b302-cd19-4557-ad21-7e9eba222d65","description":"Telefono de alta gama","price":1600.0},{"id":6,"name":"Iphone 17","sku":"e613e675-509f-4b02-8e82-4f3c83bf9980","description":"Telefono de alta gama","price":1700.0},{"id":7,"name":"Iphone 18","sku":"e4edec53-426e-49bf-8a04-fda98c8bc369","description":"Telefono de alta gama","price":1800.0},{"id":8,"name":"Iphone 19","sku":"dba820fe-9714-4b3d-8142-4f0dafde0ae2","description":"Telefono de alta gama","price":1900.0},{"id":9,"name":"Iphone 99","sku":"5381ab38-5a99-43f3-bf9f-487b95cff617","description":"Este es un smartphone de alta gama","price":9999.0},{"id":10,"name":"Iphone 99","sku":"696aac2a-3437-436a-b82c-cb6de5244530","description":"Este es un smartphone de alta gama","price":9999.0},{"id":11,"name":"Iphone 99","sku":"0b6409bb-2c27-4c26-8a5b-6ea889742c2a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":12,"name":"Iphone 99","sku":"753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc","description":"Este es un smartphone de alta gama","price":9999.0},{"id":13,"name":"Iphone Actualizado","sku":"ab09ae3d-c881-4852-8acf-ae6006627125","description":"Este es un smartphone de alta gama","price":-9999.0},{"id":14,"name":"Iphone 99","sku":"6751882c-3a3c-43b7-b179-5ca6df54b680","description":"Este es un smartphone de alta gama","price":9999.0},{"id":15,"name":"Iphone 99","sku":"de7e513c-aecc-49a7-bd46-03c3c24c1b94","description":"Este es un smartphone de alta gama","price":9999.0},{"id":16,"name":"Iphone 99","sku":"1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":17,"name":"Iphone 99","sku":"4d923382-16ff-4367-ac0e-1f4ec3a617c9","description":"Este es un smartphone de alta gama","price":9999.0},{"id":18,"name":"Iphone 99","sku":"c30bbcb8-7a08-4af2-aec9-d19502d20f90","description":"Este es un smartphone de alta gama","price":9999.0},{"id":19,"name":"Iphone 99","sku":"52e7b344-7469-4896-a204-bdfe4e70e856","description":"Este es un smartphone de alta gama","price":9999.0},{"id":20,"name":"Iphone 99","sku":"2191197d-754f-4648-9378-e77ed08eb7f3","description":"Este es un smartphone de alta gama","price":9999.0},{"id":21,"name":"Iphone 99","sku":"098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":22,"name":"Iphone 99","sku":"bef7122c-147f-49ab-bd72-2b54c23a4edd","description":"Este es un smartphone de alta gama","price":9999.0},{"id":23,"name":"Iphone 99","sku":"f68b2642-6ac1-45a8-859b-04da47054c0a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":24,"name":"Iphone Actualizado","sku":"f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73","description":"Este es un smartphone de alta gama","price":9999.0},{"id":25,"name":"Iphone 99","sku":"11df6ed8-4d6c-46a9-841b-8e4d5b6d760c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":26,"name":"Iphone 99","sku":"ae1a2e1d-fafc-41b7-aa20-c8745fd5c009","description":"Este es un smartphone de alta gama","price":9999.0},{"id":27,"name":"Iphone 99","sku":"a5c21aa0-850c-4782-8cb2-d15d6c409188","description":"Este es un smartphone de alta gama","price":9999.0},{"id":28,"name":"Iphone 99","sku":"bce132ad-3e2f-4e8b-8228-6b9dc7a08537","description":"Este es un smartphone de alta gama","price":9999.0},{"id":29,"name":"Iphone 99","sku":"ad26fb78-a00f-46cd-bbb9-d9af827d814a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":30,"name":"Iphone 99","sku":"8d75bd4d-8218-481f-b1e5-5458ef1fd6e5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":31,"name":"Iphone 99","sku":"db4a1199-c1c6-4276-a346-227c2b64dd37","description":"Este es un smartphone de alta gama","price":9999.0},{"id":32,"name":"Iphone 99","sku":"984f8260-e211-4d21-a57d-ab5dffcf0782","description":"Este es un smartphone de alta gama","price":9999.0},{"id":33,"name":"Iphone 99","sku":"08b0c2a2-9189-4a3f-9ac4-c6e8e15ea766","description":"Este es un smartphone de alta gama","price":9999.0},{"id":34,"name":"Iphone 99","sku":"0e54f489-74c9-4aed-8868-7cfa264df41c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":35,"name":"Iphone 99","sku":"3c63055e-b245-43c5-8226-dbc4a8db7b6f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":36,"name":"Iphone 99","sku":"9f8cc428-46e0-469d-b2fc-33ccd516a433","description":"Este es un smartphone de alta gama","price":9999.0},{"id":37,"name":"Iphone 99","sku":"a8229a78-697e-4c7e-b957-ba75ae434148","description":"Este es un smartphone de alta gama","price":9999.0},{"id":38,"name":"Iphone 99","sku":"f78bfe3f-583b-4d29-b599-05f2516be730","description":"Este es un smartphone de alta gama","price":9999.0},{"id":39,"name":"Iphone 99","sku":"1cd48678-cc62-4189-a0f0-e8f6a61b127b","description":"Este es un smartphone de alta gama","price":9999.0},{"id":40,"name":"Iphone 99","sku":"e1aa2ad7-25f8-4112-a30d-de195883f51f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":41,"name":"Iphone 99","sku":"2cd7f4e5-bb03-4f8c-8378-bb274989ea0e","description":"Este es un smartphone de alta gama","price":9999.0},{"id":42,"name":"Iphone 99","sku":"a971fdf8-6bb2-442a-a67b-ad213e88182f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":43,"name":"Iphone 99","sku":"0bbfac20-eba2-42be-ac82-c3a92b60b1d0","description":"Este es un smartphone de alta gama","price":9999.0},{"id":44,"name":"Iphone 99","sku":"4597bda1-4dbf-42ee-82aa-6639cd2c80f4","description":"Este es un smartphone de alta gama","price":9999.0},{"id":45,"name":"Iphone 99","sku":"8d653719-441f-42b3-a8ba-7710edc5ef52","description":"Este es un smartphone de alta gama","price":9999.0},{"id":46,"name":"Iphone 99","sku":"21704507-6efd-4322-85da-21aa7d9ed057","description":"Este es un smartphone de alta gama","price":9999.0},{"id":47,"name":"Iphone 99","sku":"59620d1c-6e3a-46cb-a23e-1f607937af25","description":"Este es un smartphone de alta gama","price":9999.0},{"id":48,"name":"Iphone 99","sku":"c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":49,"name":"Iphone Actualizado","sku":"b3ca749e-1347-454b-8c52-392dfd041b7f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":50,"name":"Iphone 99","sku":"0c8b540b-41e1-4e88-97e7-fb39ae4761bb","description":"Descripcion Actualizada","price":9999.0},{"id":51,"name":"Iphone 99","sku":"dad537e8-0eaf-4a00-8c7f-aa595881bc94","description":"Este es un smartphone de alta gama","price":90000.0},{"id":52,"name":"Iphone 99","sku":"a0a16200-a90b-45d7-9d64-014ba26f4879","description":"Este es un smartphone de alta gama","price":9999.0},{"id":53,"name":"Iphone 99","sku":"3a75e325-95d6-47d9-b924-c9286d4974c7","description":"Este es un smartphone de alta gama","price":9999.0},{"id":54,"name":"Iphone 99","sku":"7a916fc4-94b2-45be-b7c9-b7eb3cfd9c39","description":"Este es un smartphone de alta gama","price":9999.0},{"id":55,"name":"Iphone 99","sku":"79fc1333-d72b-450c-8470-e2884b3b3221","description":"Este es un smartphone de alta gama","price":9999.0},{"id":56,"name":"Iphone Actualizado","sku":"a2f6e39a-c593-4e84-a687-a9a00c9518be","description":"Este es un smartphone de alta gama","price":9999.0},{"id":57,"name":"Iphone 99","sku":"5d179ada-6b13-4c65-aaf8-252985c5aeb9","description":"Descripcion Actualizada","price":9999.0},{"id":58,"name":"Iphone 99","sku":"e77b5ac1-947d-44d1-adb2-04a156be704a","description":"Este es un smartphone de alta gama","price":90000.0},{"id":68,"name":"Iphone 7000","sku":"d106a1a6-a0ec-4132-abe6-d97cdecc1a47","description":"Telefono de alta gama","price":5500.0},{"id":69,"name":"Iphone 7000","sku":"8c5284cb-e3c7-4579-8951-3bda1d0e8a3c","description":"Telefono de alta gama","price":5500.0},{"id":70,"name":"Iphone 7000","sku":"ab8373e6-d59d-41e7-a14d-9d478e3eba81","description":"Telefono de alta gama","price":5500.0},{"id":71,"name":"Iphone 7000","sku":"054be4e0-12a7-46f1-a843-dc91fb3ce452","description":"Telefono de alta gama","price":5500.0},{"id":72,"name":"Iphone 7000","sku":"a26a79ed-cc53-429e-bf08-c8ef83f5586a","description":"Telefono de alta gama","price":5500.0},{"id":73,"name":"Iphone 7000","sku":"9063a9f1-32ed-4ea0-af57-6407af6de611","description":"Telefono de alta gama","price":5500.0},{"id":74,"name":"Iphone 7000","sku":"0f661091-0b51-4768-bced-07be4f8029f7","description":"Telefono de alta gama","price":5500.0},{"id":75,"name":"Iphone 7000","sku":"0adb6ebd-7bfd-4601-9103-b1946fe7df87","description":"Telefono de alta gama","price":5500.0},{"id":76,"name":"Iphone 7000","sku":"0631d288-009e-431a-aaea-22a5ac07b183","description":"Telefono de alta gama","price":5500.0},{"id":77,"name":"Iphone 7000","sku":"5a250448-6e76-4832-ac40-91b4a061e6c0","description":"Telefono de alta gama","price":5500.0},{"id":78,"name":"Iphone 7000","sku":"615140e5-599d-430b-b822-11900627b571","description":"Telefono de alta gama","price":5500.0},{"id":90,"name":"Iphone 12","sku":"8e58fd6f-19f4-4100-9aff-7020f90e4740","description":"Este es un smartphone de alta gama","price":1200.0},{"id":91,"name":"Iphone 12","sku":"4184dc23-59d7-4ead-9370-869391692f03","description":"Este es un smartphone de alta gama","price":1200.0},{"id":92,"name":"Iphone 12","sku":"ad7afca2-daec-4ebc-80dd-ef50ac1315c2","description":"Este es un smartphone de alta gama","price":1200.0},{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0},{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"Se encontró 74 producto(s)"}
+
+00:56:49.998 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:26
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 111, url: http://localhost:8081/api/v1/product/, response: 
+{"products":[{"id":1,"name":"Iphone 14","sku":"c9fe0d9b-b760-4f75-9166-84f8a54e4076","description":"Este es un smartphone de alta gama","price":1400.0},{"id":2,"name":"Iphone 12","sku":"13280820-37a9-4104-82f2-28d25947661d","description":"Este es un smartphone de alta gama","price":1200.0},{"id":3,"name":"Iphone 15","sku":"764742e5-cd29-48e9-924a-fdd70dc295eb","description":"Este es un smartphone de alta gama","price":1500.0},{"id":4,"name":"Iphone 15","sku":"4cd197c3-2ab6-4ef2-a839-7f42ab59e0ea","description":"Este es un smartphone de alta gama","price":1500.0},{"id":5,"name":"Iphone 16","sku":"8fb2b302-cd19-4557-ad21-7e9eba222d65","description":"Telefono de alta gama","price":1600.0},{"id":6,"name":"Iphone 17","sku":"e613e675-509f-4b02-8e82-4f3c83bf9980","description":"Telefono de alta gama","price":1700.0},{"id":7,"name":"Iphone 18","sku":"e4edec53-426e-49bf-8a04-fda98c8bc369","description":"Telefono de alta gama","price":1800.0},{"id":8,"name":"Iphone 19","sku":"dba820fe-9714-4b3d-8142-4f0dafde0ae2","description":"Telefono de alta gama","price":1900.0},{"id":9,"name":"Iphone 99","sku":"5381ab38-5a99-43f3-bf9f-487b95cff617","description":"Este es un smartphone de alta gama","price":9999.0},{"id":10,"name":"Iphone 99","sku":"696aac2a-3437-436a-b82c-cb6de5244530","description":"Este es un smartphone de alta gama","price":9999.0},{"id":11,"name":"Iphone 99","sku":"0b6409bb-2c27-4c26-8a5b-6ea889742c2a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":12,"name":"Iphone 99","sku":"753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc","description":"Este es un smartphone de alta gama","price":9999.0},{"id":13,"name":"Iphone Actualizado","sku":"ab09ae3d-c881-4852-8acf-ae6006627125","description":"Este es un smartphone de alta gama","price":-9999.0},{"id":14,"name":"Iphone 99","sku":"6751882c-3a3c-43b7-b179-5ca6df54b680","description":"Este es un smartphone de alta gama","price":9999.0},{"id":15,"name":"Iphone 99","sku":"de7e513c-aecc-49a7-bd46-03c3c24c1b94","description":"Este es un smartphone de alta gama","price":9999.0},{"id":16,"name":"Iphone 99","sku":"1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":17,"name":"Iphone 99","sku":"4d923382-16ff-4367-ac0e-1f4ec3a617c9","description":"Este es un smartphone de alta gama","price":9999.0},{"id":18,"name":"Iphone 99","sku":"c30bbcb8-7a08-4af2-aec9-d19502d20f90","description":"Este es un smartphone de alta gama","price":9999.0},{"id":19,"name":"Iphone 99","sku":"52e7b344-7469-4896-a204-bdfe4e70e856","description":"Este es un smartphone de alta gama","price":9999.0},{"id":20,"name":"Iphone 99","sku":"2191197d-754f-4648-9378-e77ed08eb7f3","description":"Este es un smartphone de alta gama","price":9999.0},{"id":21,"name":"Iphone 99","sku":"098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":22,"name":"Iphone 99","sku":"bef7122c-147f-49ab-bd72-2b54c23a4edd","description":"Este es un smartphone de alta gama","price":9999.0},{"id":23,"name":"Iphone 99","sku":"f68b2642-6ac1-45a8-859b-04da47054c0a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":24,"name":"Iphone Actualizado","sku":"f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73","description":"Este es un smartphone de alta gama","price":9999.0},{"id":25,"name":"Iphone 99","sku":"11df6ed8-4d6c-46a9-841b-8e4d5b6d760c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":26,"name":"Iphone 99","sku":"ae1a2e1d-fafc-41b7-aa20-c8745fd5c009","description":"Este es un smartphone de alta gama","price":9999.0},{"id":27,"name":"Iphone 99","sku":"a5c21aa0-850c-4782-8cb2-d15d6c409188","description":"Este es un smartphone de alta gama","price":9999.0},{"id":28,"name":"Iphone 99","sku":"bce132ad-3e2f-4e8b-8228-6b9dc7a08537","description":"Este es un smartphone de alta gama","price":9999.0},{"id":29,"name":"Iphone 99","sku":"ad26fb78-a00f-46cd-bbb9-d9af827d814a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":30,"name":"Iphone 99","sku":"8d75bd4d-8218-481f-b1e5-5458ef1fd6e5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":31,"name":"Iphone 99","sku":"db4a1199-c1c6-4276-a346-227c2b64dd37","description":"Este es un smartphone de alta gama","price":9999.0},{"id":32,"name":"Iphone 99","sku":"984f8260-e211-4d21-a57d-ab5dffcf0782","description":"Este es un smartphone de alta gama","price":9999.0},{"id":33,"name":"Iphone 99","sku":"08b0c2a2-9189-4a3f-9ac4-c6e8e15ea766","description":"Este es un smartphone de alta gama","price":9999.0},{"id":34,"name":"Iphone 99","sku":"0e54f489-74c9-4aed-8868-7cfa264df41c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":35,"name":"Iphone 99","sku":"3c63055e-b245-43c5-8226-dbc4a8db7b6f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":36,"name":"Iphone 99","sku":"9f8cc428-46e0-469d-b2fc-33ccd516a433","description":"Este es un smartphone de alta gama","price":9999.0},{"id":37,"name":"Iphone 99","sku":"a8229a78-697e-4c7e-b957-ba75ae434148","description":"Este es un smartphone de alta gama","price":9999.0},{"id":38,"name":"Iphone 99","sku":"f78bfe3f-583b-4d29-b599-05f2516be730","description":"Este es un smartphone de alta gama","price":9999.0},{"id":39,"name":"Iphone 99","sku":"1cd48678-cc62-4189-a0f0-e8f6a61b127b","description":"Este es un smartphone de alta gama","price":9999.0},{"id":40,"name":"Iphone 99","sku":"e1aa2ad7-25f8-4112-a30d-de195883f51f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":41,"name":"Iphone 99","sku":"2cd7f4e5-bb03-4f8c-8378-bb274989ea0e","description":"Este es un smartphone de alta gama","price":9999.0},{"id":42,"name":"Iphone 99","sku":"a971fdf8-6bb2-442a-a67b-ad213e88182f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":43,"name":"Iphone 99","sku":"0bbfac20-eba2-42be-ac82-c3a92b60b1d0","description":"Este es un smartphone de alta gama","price":9999.0},{"id":44,"name":"Iphone 99","sku":"4597bda1-4dbf-42ee-82aa-6639cd2c80f4","description":"Este es un smartphone de alta gama","price":9999.0},{"id":45,"name":"Iphone 99","sku":"8d653719-441f-42b3-a8ba-7710edc5ef52","description":"Este es un smartphone de alta gama","price":9999.0},{"id":46,"name":"Iphone 99","sku":"21704507-6efd-4322-85da-21aa7d9ed057","description":"Este es un smartphone de alta gama","price":9999.0},{"id":47,"name":"Iphone 99","sku":"59620d1c-6e3a-46cb-a23e-1f607937af25","description":"Este es un smartphone de alta gama","price":9999.0},{"id":48,"name":"Iphone 99","sku":"c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":49,"name":"Iphone Actualizado","sku":"b3ca749e-1347-454b-8c52-392dfd041b7f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":50,"name":"Iphone 99","sku":"0c8b540b-41e1-4e88-97e7-fb39ae4761bb","description":"Descripcion Actualizada","price":9999.0},{"id":51,"name":"Iphone 99","sku":"dad537e8-0eaf-4a00-8c7f-aa595881bc94","description":"Este es un smartphone de alta gama","price":90000.0},{"id":52,"name":"Iphone 99","sku":"a0a16200-a90b-45d7-9d64-014ba26f4879","description":"Este es un smartphone de alta gama","price":9999.0},{"id":53,"name":"Iphone 99","sku":"3a75e325-95d6-47d9-b924-c9286d4974c7","description":"Este es un smartphone de alta gama","price":9999.0},{"id":54,"name":"Iphone 99","sku":"7a916fc4-94b2-45be-b7c9-b7eb3cfd9c39","description":"Este es un smartphone de alta gama","price":9999.0},{"id":55,"name":"Iphone 99","sku":"79fc1333-d72b-450c-8470-e2884b3b3221","description":"Este es un smartphone de alta gama","price":9999.0},{"id":56,"name":"Iphone Actualizado","sku":"a2f6e39a-c593-4e84-a687-a9a00c9518be","description":"Este es un smartphone de alta gama","price":9999.0},{"id":57,"name":"Iphone 99","sku":"5d179ada-6b13-4c65-aaf8-252985c5aeb9","description":"Descripcion Actualizada","price":9999.0},{"id":58,"name":"Iphone 99","sku":"e77b5ac1-947d-44d1-adb2-04a156be704a","description":"Este es un smartphone de alta gama","price":90000.0},{"id":68,"name":"Iphone 7000","sku":"d106a1a6-a0ec-4132-abe6-d97cdecc1a47","description":"Telefono de alta gama","price":5500.0},{"id":69,"name":"Iphone 7000","sku":"8c5284cb-e3c7-4579-8951-3bda1d0e8a3c","description":"Telefono de alta gama","price":5500.0},{"id":70,"name":"Iphone 7000","sku":"ab8373e6-d59d-41e7-a14d-9d478e3eba81","description":"Telefono de alta gama","price":5500.0},{"id":71,"name":"Iphone 7000","sku":"054be4e0-12a7-46f1-a843-dc91fb3ce452","description":"Telefono de alta gama","price":5500.0},{"id":72,"name":"Iphone 7000","sku":"a26a79ed-cc53-429e-bf08-c8ef83f5586a","description":"Telefono de alta gama","price":5500.0},{"id":73,"name":"Iphone 7000","sku":"9063a9f1-32ed-4ea0-af57-6407af6de611","description":"Telefono de alta gama","price":5500.0},{"id":74,"name":"Iphone 7000","sku":"0f661091-0b51-4768-bced-07be4f8029f7","description":"Telefono de alta gama","price":5500.0},{"id":75,"name":"Iphone 7000","sku":"0adb6ebd-7bfd-4601-9103-b1946fe7df87","description":"Telefono de alta gama","price":5500.0},{"id":76,"name":"Iphone 7000","sku":"0631d288-009e-431a-aaea-22a5ac07b183","description":"Telefono de alta gama","price":5500.0},{"id":77,"name":"Iphone 7000","sku":"5a250448-6e76-4832-ac40-91b4a061e6c0","description":"Telefono de alta gama","price":5500.0},{"id":78,"name":"Iphone 7000","sku":"615140e5-599d-430b-b822-11900627b571","description":"Telefono de alta gama","price":5500.0},{"id":90,"name":"Iphone 12","sku":"8e58fd6f-19f4-4100-9aff-7020f90e4740","description":"Este es un smartphone de alta gama","price":1200.0},{"id":91,"name":"Iphone 12","sku":"4184dc23-59d7-4ead-9370-869391692f03","description":"Este es un smartphone de alta gama","price":1200.0},{"id":92,"name":"Iphone 12","sku":"ad7afca2-daec-4ebc-80dd-ef50ac1315c2","description":"Este es un smartphone de alta gama","price":1200.0},{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0},{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"Se encontró 74 producto(s)"}
+classpath:api/producto/listar.feature:26
+00:56:50.022 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:56:50.026 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a072cc4e-9211-462e-a2c1-23d5c74e17ec",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:56:50.029 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/a072cc4e-9211-462e-a2c1-23d5c74e17ec/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:56:50.036 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:56:49 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:56:50.037 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:35
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 6, url: http://localhost:8081/api/v1/product/a072cc4e-9211-462e-a2c1-23d5c74e17ec/, response: 
+{"products":[{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:35
+00:56:50.047 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:56:50.051 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a072cc4e-9211-462e-a2c1-23d5c74e17ec",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:56:50.054 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/a072cc4e-9211-462e-a2c1-23d5c74e17ec/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:56:50.060 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:56:49 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:56:50.062 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:45
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 5, url: http://localhost:8081/api/v1/product/a072cc4e-9211-462e-a2c1-23d5c74e17ec/, response: 
+{"products":[{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:45
+00:56:50.073 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:56:50.078 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a072cc4e-9211-462e-a2c1-23d5c74e17ec",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:56:50.080 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/a072cc4e-9211-462e-a2c1-23d5c74e17ec/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:56:50.085 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:56:49 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:56:50.083+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/a072cc4e-9211-462e-a2c1-23d5c74e17ec/"}
+
+00:56:50.086 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:56:50.083+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/a072cc4e-9211-462e-a2c1-23d5c74e17ec/"
+}
+ 
+00:57:12.347 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:57:13.215 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:13.251 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:57:13.563 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:57:13.592 [main] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"b6bfc4ef-848a-466e-a746-2e33fdf73be3","status":true,"message":"El producto fue creado con éxito!"}
+
+00:57:13.596 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:57:13.602 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b6bfc4ef-848a-466e-a746-2e33fdf73be3",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:13.616 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:13.627 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":1,"name":"Iphone 14","sku":"c9fe0d9b-b760-4f75-9166-84f8a54e4076","description":"Este es un smartphone de alta gama","price":1400.0},{"id":2,"name":"Iphone 12","sku":"13280820-37a9-4104-82f2-28d25947661d","description":"Este es un smartphone de alta gama","price":1200.0},{"id":3,"name":"Iphone 15","sku":"764742e5-cd29-48e9-924a-fdd70dc295eb","description":"Este es un smartphone de alta gama","price":1500.0},{"id":4,"name":"Iphone 15","sku":"4cd197c3-2ab6-4ef2-a839-7f42ab59e0ea","description":"Este es un smartphone de alta gama","price":1500.0},{"id":5,"name":"Iphone 16","sku":"8fb2b302-cd19-4557-ad21-7e9eba222d65","description":"Telefono de alta gama","price":1600.0},{"id":6,"name":"Iphone 17","sku":"e613e675-509f-4b02-8e82-4f3c83bf9980","description":"Telefono de alta gama","price":1700.0},{"id":7,"name":"Iphone 18","sku":"e4edec53-426e-49bf-8a04-fda98c8bc369","description":"Telefono de alta gama","price":1800.0},{"id":8,"name":"Iphone 19","sku":"dba820fe-9714-4b3d-8142-4f0dafde0ae2","description":"Telefono de alta gama","price":1900.0},{"id":9,"name":"Iphone 99","sku":"5381ab38-5a99-43f3-bf9f-487b95cff617","description":"Este es un smartphone de alta gama","price":9999.0},{"id":10,"name":"Iphone 99","sku":"696aac2a-3437-436a-b82c-cb6de5244530","description":"Este es un smartphone de alta gama","price":9999.0},{"id":11,"name":"Iphone 99","sku":"0b6409bb-2c27-4c26-8a5b-6ea889742c2a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":12,"name":"Iphone 99","sku":"753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc","description":"Este es un smartphone de alta gama","price":9999.0},{"id":13,"name":"Iphone Actualizado","sku":"ab09ae3d-c881-4852-8acf-ae6006627125","description":"Este es un smartphone de alta gama","price":-9999.0},{"id":14,"name":"Iphone 99","sku":"6751882c-3a3c-43b7-b179-5ca6df54b680","description":"Este es un smartphone de alta gama","price":9999.0},{"id":15,"name":"Iphone 99","sku":"de7e513c-aecc-49a7-bd46-03c3c24c1b94","description":"Este es un smartphone de alta gama","price":9999.0},{"id":16,"name":"Iphone 99","sku":"1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":17,"name":"Iphone 99","sku":"4d923382-16ff-4367-ac0e-1f4ec3a617c9","description":"Este es un smartphone de alta gama","price":9999.0},{"id":18,"name":"Iphone 99","sku":"c30bbcb8-7a08-4af2-aec9-d19502d20f90","description":"Este es un smartphone de alta gama","price":9999.0},{"id":19,"name":"Iphone 99","sku":"52e7b344-7469-4896-a204-bdfe4e70e856","description":"Este es un smartphone de alta gama","price":9999.0},{"id":20,"name":"Iphone 99","sku":"2191197d-754f-4648-9378-e77ed08eb7f3","description":"Este es un smartphone de alta gama","price":9999.0},{"id":21,"name":"Iphone 99","sku":"098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":22,"name":"Iphone 99","sku":"bef7122c-147f-49ab-bd72-2b54c23a4edd","description":"Este es un smartphone de alta gama","price":9999.0},{"id":23,"name":"Iphone 99","sku":"f68b2642-6ac1-45a8-859b-04da47054c0a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":24,"name":"Iphone Actualizado","sku":"f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73","description":"Este es un smartphone de alta gama","price":9999.0},{"id":25,"name":"Iphone 99","sku":"11df6ed8-4d6c-46a9-841b-8e4d5b6d760c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":26,"name":"Iphone 99","sku":"ae1a2e1d-fafc-41b7-aa20-c8745fd5c009","description":"Este es un smartphone de alta gama","price":9999.0},{"id":27,"name":"Iphone 99","sku":"a5c21aa0-850c-4782-8cb2-d15d6c409188","description":"Este es un smartphone de alta gama","price":9999.0},{"id":28,"name":"Iphone 99","sku":"bce132ad-3e2f-4e8b-8228-6b9dc7a08537","description":"Este es un smartphone de alta gama","price":9999.0},{"id":29,"name":"Iphone 99","sku":"ad26fb78-a00f-46cd-bbb9-d9af827d814a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":30,"name":"Iphone 99","sku":"8d75bd4d-8218-481f-b1e5-5458ef1fd6e5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":31,"name":"Iphone 99","sku":"db4a1199-c1c6-4276-a346-227c2b64dd37","description":"Este es un smartphone de alta gama","price":9999.0},{"id":32,"name":"Iphone 99","sku":"984f8260-e211-4d21-a57d-ab5dffcf0782","description":"Este es un smartphone de alta gama","price":9999.0},{"id":33,"name":"Iphone 99","sku":"08b0c2a2-9189-4a3f-9ac4-c6e8e15ea766","description":"Este es un smartphone de alta gama","price":9999.0},{"id":34,"name":"Iphone 99","sku":"0e54f489-74c9-4aed-8868-7cfa264df41c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":35,"name":"Iphone 99","sku":"3c63055e-b245-43c5-8226-dbc4a8db7b6f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":36,"name":"Iphone 99","sku":"9f8cc428-46e0-469d-b2fc-33ccd516a433","description":"Este es un smartphone de alta gama","price":9999.0},{"id":37,"name":"Iphone 99","sku":"a8229a78-697e-4c7e-b957-ba75ae434148","description":"Este es un smartphone de alta gama","price":9999.0},{"id":38,"name":"Iphone 99","sku":"f78bfe3f-583b-4d29-b599-05f2516be730","description":"Este es un smartphone de alta gama","price":9999.0},{"id":39,"name":"Iphone 99","sku":"1cd48678-cc62-4189-a0f0-e8f6a61b127b","description":"Este es un smartphone de alta gama","price":9999.0},{"id":40,"name":"Iphone 99","sku":"e1aa2ad7-25f8-4112-a30d-de195883f51f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":41,"name":"Iphone 99","sku":"2cd7f4e5-bb03-4f8c-8378-bb274989ea0e","description":"Este es un smartphone de alta gama","price":9999.0},{"id":42,"name":"Iphone 99","sku":"a971fdf8-6bb2-442a-a67b-ad213e88182f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":43,"name":"Iphone 99","sku":"0bbfac20-eba2-42be-ac82-c3a92b60b1d0","description":"Este es un smartphone de alta gama","price":9999.0},{"id":44,"name":"Iphone 99","sku":"4597bda1-4dbf-42ee-82aa-6639cd2c80f4","description":"Este es un smartphone de alta gama","price":9999.0},{"id":45,"name":"Iphone 99","sku":"8d653719-441f-42b3-a8ba-7710edc5ef52","description":"Este es un smartphone de alta gama","price":9999.0},{"id":46,"name":"Iphone 99","sku":"21704507-6efd-4322-85da-21aa7d9ed057","description":"Este es un smartphone de alta gama","price":9999.0},{"id":47,"name":"Iphone 99","sku":"59620d1c-6e3a-46cb-a23e-1f607937af25","description":"Este es un smartphone de alta gama","price":9999.0},{"id":48,"name":"Iphone 99","sku":"c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":49,"name":"Iphone Actualizado","sku":"b3ca749e-1347-454b-8c52-392dfd041b7f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":50,"name":"Iphone 99","sku":"0c8b540b-41e1-4e88-97e7-fb39ae4761bb","description":"Descripcion Actualizada","price":9999.0},{"id":51,"name":"Iphone 99","sku":"dad537e8-0eaf-4a00-8c7f-aa595881bc94","description":"Este es un smartphone de alta gama","price":90000.0},{"id":52,"name":"Iphone 99","sku":"a0a16200-a90b-45d7-9d64-014ba26f4879","description":"Este es un smartphone de alta gama","price":9999.0},{"id":53,"name":"Iphone 99","sku":"3a75e325-95d6-47d9-b924-c9286d4974c7","description":"Este es un smartphone de alta gama","price":9999.0},{"id":54,"name":"Iphone 99","sku":"7a916fc4-94b2-45be-b7c9-b7eb3cfd9c39","description":"Este es un smartphone de alta gama","price":9999.0},{"id":55,"name":"Iphone 99","sku":"79fc1333-d72b-450c-8470-e2884b3b3221","description":"Este es un smartphone de alta gama","price":9999.0},{"id":56,"name":"Iphone Actualizado","sku":"a2f6e39a-c593-4e84-a687-a9a00c9518be","description":"Este es un smartphone de alta gama","price":9999.0},{"id":57,"name":"Iphone 99","sku":"5d179ada-6b13-4c65-aaf8-252985c5aeb9","description":"Descripcion Actualizada","price":9999.0},{"id":58,"name":"Iphone 99","sku":"e77b5ac1-947d-44d1-adb2-04a156be704a","description":"Este es un smartphone de alta gama","price":90000.0},{"id":68,"name":"Iphone 7000","sku":"d106a1a6-a0ec-4132-abe6-d97cdecc1a47","description":"Telefono de alta gama","price":5500.0},{"id":69,"name":"Iphone 7000","sku":"8c5284cb-e3c7-4579-8951-3bda1d0e8a3c","description":"Telefono de alta gama","price":5500.0},{"id":70,"name":"Iphone 7000","sku":"ab8373e6-d59d-41e7-a14d-9d478e3eba81","description":"Telefono de alta gama","price":5500.0},{"id":71,"name":"Iphone 7000","sku":"054be4e0-12a7-46f1-a843-dc91fb3ce452","description":"Telefono de alta gama","price":5500.0},{"id":72,"name":"Iphone 7000","sku":"a26a79ed-cc53-429e-bf08-c8ef83f5586a","description":"Telefono de alta gama","price":5500.0},{"id":73,"name":"Iphone 7000","sku":"9063a9f1-32ed-4ea0-af57-6407af6de611","description":"Telefono de alta gama","price":5500.0},{"id":74,"name":"Iphone 7000","sku":"0f661091-0b51-4768-bced-07be4f8029f7","description":"Telefono de alta gama","price":5500.0},{"id":75,"name":"Iphone 7000","sku":"0adb6ebd-7bfd-4601-9103-b1946fe7df87","description":"Telefono de alta gama","price":5500.0},{"id":76,"name":"Iphone 7000","sku":"0631d288-009e-431a-aaea-22a5ac07b183","description":"Telefono de alta gama","price":5500.0},{"id":77,"name":"Iphone 7000","sku":"5a250448-6e76-4832-ac40-91b4a061e6c0","description":"Telefono de alta gama","price":5500.0},{"id":78,"name":"Iphone 7000","sku":"615140e5-599d-430b-b822-11900627b571","description":"Telefono de alta gama","price":5500.0},{"id":90,"name":"Iphone 12","sku":"8e58fd6f-19f4-4100-9aff-7020f90e4740","description":"Este es un smartphone de alta gama","price":1200.0},{"id":91,"name":"Iphone 12","sku":"4184dc23-59d7-4ead-9370-869391692f03","description":"Este es un smartphone de alta gama","price":1200.0},{"id":92,"name":"Iphone 12","sku":"ad7afca2-daec-4ebc-80dd-ef50ac1315c2","description":"Este es un smartphone de alta gama","price":1200.0},{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0},{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0},{"id":95,"name":"Iphone 12","sku":"b6bfc4ef-848a-466e-a746-2e33fdf73be3","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"Se encontró 75 producto(s)"}
+
+00:57:13.635 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:26
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 10, url: http://localhost:8081/api/v1/product/, response: 
+{"products":[{"id":1,"name":"Iphone 14","sku":"c9fe0d9b-b760-4f75-9166-84f8a54e4076","description":"Este es un smartphone de alta gama","price":1400.0},{"id":2,"name":"Iphone 12","sku":"13280820-37a9-4104-82f2-28d25947661d","description":"Este es un smartphone de alta gama","price":1200.0},{"id":3,"name":"Iphone 15","sku":"764742e5-cd29-48e9-924a-fdd70dc295eb","description":"Este es un smartphone de alta gama","price":1500.0},{"id":4,"name":"Iphone 15","sku":"4cd197c3-2ab6-4ef2-a839-7f42ab59e0ea","description":"Este es un smartphone de alta gama","price":1500.0},{"id":5,"name":"Iphone 16","sku":"8fb2b302-cd19-4557-ad21-7e9eba222d65","description":"Telefono de alta gama","price":1600.0},{"id":6,"name":"Iphone 17","sku":"e613e675-509f-4b02-8e82-4f3c83bf9980","description":"Telefono de alta gama","price":1700.0},{"id":7,"name":"Iphone 18","sku":"e4edec53-426e-49bf-8a04-fda98c8bc369","description":"Telefono de alta gama","price":1800.0},{"id":8,"name":"Iphone 19","sku":"dba820fe-9714-4b3d-8142-4f0dafde0ae2","description":"Telefono de alta gama","price":1900.0},{"id":9,"name":"Iphone 99","sku":"5381ab38-5a99-43f3-bf9f-487b95cff617","description":"Este es un smartphone de alta gama","price":9999.0},{"id":10,"name":"Iphone 99","sku":"696aac2a-3437-436a-b82c-cb6de5244530","description":"Este es un smartphone de alta gama","price":9999.0},{"id":11,"name":"Iphone 99","sku":"0b6409bb-2c27-4c26-8a5b-6ea889742c2a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":12,"name":"Iphone 99","sku":"753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc","description":"Este es un smartphone de alta gama","price":9999.0},{"id":13,"name":"Iphone Actualizado","sku":"ab09ae3d-c881-4852-8acf-ae6006627125","description":"Este es un smartphone de alta gama","price":-9999.0},{"id":14,"name":"Iphone 99","sku":"6751882c-3a3c-43b7-b179-5ca6df54b680","description":"Este es un smartphone de alta gama","price":9999.0},{"id":15,"name":"Iphone 99","sku":"de7e513c-aecc-49a7-bd46-03c3c24c1b94","description":"Este es un smartphone de alta gama","price":9999.0},{"id":16,"name":"Iphone 99","sku":"1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":17,"name":"Iphone 99","sku":"4d923382-16ff-4367-ac0e-1f4ec3a617c9","description":"Este es un smartphone de alta gama","price":9999.0},{"id":18,"name":"Iphone 99","sku":"c30bbcb8-7a08-4af2-aec9-d19502d20f90","description":"Este es un smartphone de alta gama","price":9999.0},{"id":19,"name":"Iphone 99","sku":"52e7b344-7469-4896-a204-bdfe4e70e856","description":"Este es un smartphone de alta gama","price":9999.0},{"id":20,"name":"Iphone 99","sku":"2191197d-754f-4648-9378-e77ed08eb7f3","description":"Este es un smartphone de alta gama","price":9999.0},{"id":21,"name":"Iphone 99","sku":"098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":22,"name":"Iphone 99","sku":"bef7122c-147f-49ab-bd72-2b54c23a4edd","description":"Este es un smartphone de alta gama","price":9999.0},{"id":23,"name":"Iphone 99","sku":"f68b2642-6ac1-45a8-859b-04da47054c0a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":24,"name":"Iphone Actualizado","sku":"f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73","description":"Este es un smartphone de alta gama","price":9999.0},{"id":25,"name":"Iphone 99","sku":"11df6ed8-4d6c-46a9-841b-8e4d5b6d760c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":26,"name":"Iphone 99","sku":"ae1a2e1d-fafc-41b7-aa20-c8745fd5c009","description":"Este es un smartphone de alta gama","price":9999.0},{"id":27,"name":"Iphone 99","sku":"a5c21aa0-850c-4782-8cb2-d15d6c409188","description":"Este es un smartphone de alta gama","price":9999.0},{"id":28,"name":"Iphone 99","sku":"bce132ad-3e2f-4e8b-8228-6b9dc7a08537","description":"Este es un smartphone de alta gama","price":9999.0},{"id":29,"name":"Iphone 99","sku":"ad26fb78-a00f-46cd-bbb9-d9af827d814a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":30,"name":"Iphone 99","sku":"8d75bd4d-8218-481f-b1e5-5458ef1fd6e5","description":"Este es un smartphone de alta gama","price":9999.0},{"id":31,"name":"Iphone 99","sku":"db4a1199-c1c6-4276-a346-227c2b64dd37","description":"Este es un smartphone de alta gama","price":9999.0},{"id":32,"name":"Iphone 99","sku":"984f8260-e211-4d21-a57d-ab5dffcf0782","description":"Este es un smartphone de alta gama","price":9999.0},{"id":33,"name":"Iphone 99","sku":"08b0c2a2-9189-4a3f-9ac4-c6e8e15ea766","description":"Este es un smartphone de alta gama","price":9999.0},{"id":34,"name":"Iphone 99","sku":"0e54f489-74c9-4aed-8868-7cfa264df41c","description":"Este es un smartphone de alta gama","price":9999.0},{"id":35,"name":"Iphone 99","sku":"3c63055e-b245-43c5-8226-dbc4a8db7b6f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":36,"name":"Iphone 99","sku":"9f8cc428-46e0-469d-b2fc-33ccd516a433","description":"Este es un smartphone de alta gama","price":9999.0},{"id":37,"name":"Iphone 99","sku":"a8229a78-697e-4c7e-b957-ba75ae434148","description":"Este es un smartphone de alta gama","price":9999.0},{"id":38,"name":"Iphone 99","sku":"f78bfe3f-583b-4d29-b599-05f2516be730","description":"Este es un smartphone de alta gama","price":9999.0},{"id":39,"name":"Iphone 99","sku":"1cd48678-cc62-4189-a0f0-e8f6a61b127b","description":"Este es un smartphone de alta gama","price":9999.0},{"id":40,"name":"Iphone 99","sku":"e1aa2ad7-25f8-4112-a30d-de195883f51f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":41,"name":"Iphone 99","sku":"2cd7f4e5-bb03-4f8c-8378-bb274989ea0e","description":"Este es un smartphone de alta gama","price":9999.0},{"id":42,"name":"Iphone 99","sku":"a971fdf8-6bb2-442a-a67b-ad213e88182f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":43,"name":"Iphone 99","sku":"0bbfac20-eba2-42be-ac82-c3a92b60b1d0","description":"Este es un smartphone de alta gama","price":9999.0},{"id":44,"name":"Iphone 99","sku":"4597bda1-4dbf-42ee-82aa-6639cd2c80f4","description":"Este es un smartphone de alta gama","price":9999.0},{"id":45,"name":"Iphone 99","sku":"8d653719-441f-42b3-a8ba-7710edc5ef52","description":"Este es un smartphone de alta gama","price":9999.0},{"id":46,"name":"Iphone 99","sku":"21704507-6efd-4322-85da-21aa7d9ed057","description":"Este es un smartphone de alta gama","price":9999.0},{"id":47,"name":"Iphone 99","sku":"59620d1c-6e3a-46cb-a23e-1f607937af25","description":"Este es un smartphone de alta gama","price":9999.0},{"id":48,"name":"Iphone 99","sku":"c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a","description":"Este es un smartphone de alta gama","price":9999.0},{"id":49,"name":"Iphone Actualizado","sku":"b3ca749e-1347-454b-8c52-392dfd041b7f","description":"Este es un smartphone de alta gama","price":9999.0},{"id":50,"name":"Iphone 99","sku":"0c8b540b-41e1-4e88-97e7-fb39ae4761bb","description":"Descripcion Actualizada","price":9999.0},{"id":51,"name":"Iphone 99","sku":"dad537e8-0eaf-4a00-8c7f-aa595881bc94","description":"Este es un smartphone de alta gama","price":90000.0},{"id":52,"name":"Iphone 99","sku":"a0a16200-a90b-45d7-9d64-014ba26f4879","description":"Este es un smartphone de alta gama","price":9999.0},{"id":53,"name":"Iphone 99","sku":"3a75e325-95d6-47d9-b924-c9286d4974c7","description":"Este es un smartphone de alta gama","price":9999.0},{"id":54,"name":"Iphone 99","sku":"7a916fc4-94b2-45be-b7c9-b7eb3cfd9c39","description":"Este es un smartphone de alta gama","price":9999.0},{"id":55,"name":"Iphone 99","sku":"79fc1333-d72b-450c-8470-e2884b3b3221","description":"Este es un smartphone de alta gama","price":9999.0},{"id":56,"name":"Iphone Actualizado","sku":"a2f6e39a-c593-4e84-a687-a9a00c9518be","description":"Este es un smartphone de alta gama","price":9999.0},{"id":57,"name":"Iphone 99","sku":"5d179ada-6b13-4c65-aaf8-252985c5aeb9","description":"Descripcion Actualizada","price":9999.0},{"id":58,"name":"Iphone 99","sku":"e77b5ac1-947d-44d1-adb2-04a156be704a","description":"Este es un smartphone de alta gama","price":90000.0},{"id":68,"name":"Iphone 7000","sku":"d106a1a6-a0ec-4132-abe6-d97cdecc1a47","description":"Telefono de alta gama","price":5500.0},{"id":69,"name":"Iphone 7000","sku":"8c5284cb-e3c7-4579-8951-3bda1d0e8a3c","description":"Telefono de alta gama","price":5500.0},{"id":70,"name":"Iphone 7000","sku":"ab8373e6-d59d-41e7-a14d-9d478e3eba81","description":"Telefono de alta gama","price":5500.0},{"id":71,"name":"Iphone 7000","sku":"054be4e0-12a7-46f1-a843-dc91fb3ce452","description":"Telefono de alta gama","price":5500.0},{"id":72,"name":"Iphone 7000","sku":"a26a79ed-cc53-429e-bf08-c8ef83f5586a","description":"Telefono de alta gama","price":5500.0},{"id":73,"name":"Iphone 7000","sku":"9063a9f1-32ed-4ea0-af57-6407af6de611","description":"Telefono de alta gama","price":5500.0},{"id":74,"name":"Iphone 7000","sku":"0f661091-0b51-4768-bced-07be4f8029f7","description":"Telefono de alta gama","price":5500.0},{"id":75,"name":"Iphone 7000","sku":"0adb6ebd-7bfd-4601-9103-b1946fe7df87","description":"Telefono de alta gama","price":5500.0},{"id":76,"name":"Iphone 7000","sku":"0631d288-009e-431a-aaea-22a5ac07b183","description":"Telefono de alta gama","price":5500.0},{"id":77,"name":"Iphone 7000","sku":"5a250448-6e76-4832-ac40-91b4a061e6c0","description":"Telefono de alta gama","price":5500.0},{"id":78,"name":"Iphone 7000","sku":"615140e5-599d-430b-b822-11900627b571","description":"Telefono de alta gama","price":5500.0},{"id":90,"name":"Iphone 12","sku":"8e58fd6f-19f4-4100-9aff-7020f90e4740","description":"Este es un smartphone de alta gama","price":1200.0},{"id":91,"name":"Iphone 12","sku":"4184dc23-59d7-4ead-9370-869391692f03","description":"Este es un smartphone de alta gama","price":1200.0},{"id":92,"name":"Iphone 12","sku":"ad7afca2-daec-4ebc-80dd-ef50ac1315c2","description":"Este es un smartphone de alta gama","price":1200.0},{"id":93,"name":"Iphone 12","sku":"044fba7a-790d-4c10-9ad1-d72cf9457bbc","description":"Este es un smartphone de alta gama","price":1200.0},{"id":94,"name":"Iphone 12","sku":"a072cc4e-9211-462e-a2c1-23d5c74e17ec","description":"Este es un smartphone de alta gama","price":1200.0},{"id":95,"name":"Iphone 12","sku":"b6bfc4ef-848a-466e-a746-2e33fdf73be3","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"Se encontró 75 producto(s)"}
+classpath:api/producto/listar.feature:26
+00:57:13.667 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:13.671 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b6bfc4ef-848a-466e-a746-2e33fdf73be3",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:13.674 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/b6bfc4ef-848a-466e-a746-2e33fdf73be3/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:13.679 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":95,"name":"Iphone 12","sku":"b6bfc4ef-848a-466e-a746-2e33fdf73be3","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:57:13.680 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:35
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 4, url: http://localhost:8081/api/v1/product/b6bfc4ef-848a-466e-a746-2e33fdf73be3/, response: 
+{"products":[{"id":95,"name":"Iphone 12","sku":"b6bfc4ef-848a-466e-a746-2e33fdf73be3","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:35
+00:57:13.690 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:13.693 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b6bfc4ef-848a-466e-a746-2e33fdf73be3",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:13.696 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/b6bfc4ef-848a-466e-a746-2e33fdf73be3/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:13.701 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":95,"name":"Iphone 12","sku":"b6bfc4ef-848a-466e-a746-2e33fdf73be3","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:57:13.702 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:45
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 5, url: http://localhost:8081/api/v1/product/b6bfc4ef-848a-466e-a746-2e33fdf73be3/, response: 
+{"products":[{"id":95,"name":"Iphone 12","sku":"b6bfc4ef-848a-466e-a746-2e33fdf73be3","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:45
+00:57:13.712 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:13.717 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b6bfc4ef-848a-466e-a746-2e33fdf73be3",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:13.719 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/b6bfc4ef-848a-466e-a746-2e33fdf73be3/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:13.722 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:13 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:57:13.721+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/b6bfc4ef-848a-466e-a746-2e33fdf73be3/"}
+
+00:57:13.724 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:57:13.721+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/b6bfc4ef-848a-466e-a746-2e33fdf73be3/"
+}
+ 
+00:57:30.281 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:57:31.189 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:31.228 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:57:31.545 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:57:31.573 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"c4d3cfa8-89c0-433b-a8d4-90e0ad30b505","status":true,"message":"El producto fue creado con éxito!"}
+
+00:57:31.577 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:57:31.583 [main] INFO  com.intuit.karate - [print] {
+  "sku": "c4d3cfa8-89c0-433b-a8d4-90e0ad30b505",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:31.586 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:31.601 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:57:31.600+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+00:57:31.604 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:57:31.600+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+00:57:31.620 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:28
+* match response.message == 'El producto no fue encontrado'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'El producto no fue encontrado'
+
+classpath:api/producto/listar.feature:28
+00:57:31.648 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:31.654 [main] INFO  com.intuit.karate - [print] {
+  "sku": "c4d3cfa8-89c0-433b-a8d4-90e0ad30b505",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:31.665 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/c4d3cfa8-89c0-433b-a8d4-90e0ad30b505/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:31.673 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":96,"name":"Iphone 12","sku":"c4d3cfa8-89c0-433b-a8d4-90e0ad30b505","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:57:31.678 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:35
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 7, url: http://localhost:8081/api/v1/product/c4d3cfa8-89c0-433b-a8d4-90e0ad30b505/, response: 
+{"products":[{"id":96,"name":"Iphone 12","sku":"c4d3cfa8-89c0-433b-a8d4-90e0ad30b505","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:35
+00:57:31.687 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:31.691 [main] INFO  com.intuit.karate - [print] {
+  "sku": "c4d3cfa8-89c0-433b-a8d4-90e0ad30b505",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:31.694 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/c4d3cfa8-89c0-433b-a8d4-90e0ad30b505/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:31.699 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":96,"name":"Iphone 12","sku":"c4d3cfa8-89c0-433b-a8d4-90e0ad30b505","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:57:31.702 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:45
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 4, url: http://localhost:8081/api/v1/product/c4d3cfa8-89c0-433b-a8d4-90e0ad30b505/, response: 
+{"products":[{"id":96,"name":"Iphone 12","sku":"c4d3cfa8-89c0-433b-a8d4-90e0ad30b505","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:45
+00:57:31.712 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:57:31.715 [main] INFO  com.intuit.karate - [print] {
+  "sku": "c4d3cfa8-89c0-433b-a8d4-90e0ad30b505",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:57:31.717 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/c4d3cfa8-89c0-433b-a8d4-90e0ad30b505/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:57:31.721 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:57:31 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:57:31.720+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/c4d3cfa8-89c0-433b-a8d4-90e0ad30b505/"}
+
+00:57:31.723 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:57:31.720+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/c4d3cfa8-89c0-433b-a8d4-90e0ad30b505/"
+}
+ 
+00:58:05.405 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:58:06.351 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:06.386 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:58:06.707 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:58:06.742 [main] DEBUG com.intuit.karate - response time in milliseconds: 32
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"a3ad0e52-1d7c-490b-8038-3bf98e64f993","status":true,"message":"El producto fue creado con éxito!"}
+
+00:58:06.745 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:58:06.751 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a3ad0e52-1d7c-490b-8038-3bf98e64f993",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:06.755 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:06.760 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:58:06.758+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+00:58:06.762 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:58:06.758+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+00:58:06.789 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:06.794 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a3ad0e52-1d7c-490b-8038-3bf98e64f993",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:06.803 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/a3ad0e52-1d7c-490b-8038-3bf98e64f993/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:06.808 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":97,"name":"Iphone 12","sku":"a3ad0e52-1d7c-490b-8038-3bf98e64f993","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:58:06.815 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:35
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 4, url: http://localhost:8081/api/v1/product/a3ad0e52-1d7c-490b-8038-3bf98e64f993/, response: 
+{"products":[{"id":97,"name":"Iphone 12","sku":"a3ad0e52-1d7c-490b-8038-3bf98e64f993","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:35
+00:58:06.836 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:06.840 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a3ad0e52-1d7c-490b-8038-3bf98e64f993",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:06.842 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/a3ad0e52-1d7c-490b-8038-3bf98e64f993/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:06.849 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":97,"name":"Iphone 12","sku":"a3ad0e52-1d7c-490b-8038-3bf98e64f993","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:58:06.851 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:45
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 7, url: http://localhost:8081/api/v1/product/a3ad0e52-1d7c-490b-8038-3bf98e64f993/, response: 
+{"products":[{"id":97,"name":"Iphone 12","sku":"a3ad0e52-1d7c-490b-8038-3bf98e64f993","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:45
+00:58:06.862 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:06.866 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a3ad0e52-1d7c-490b-8038-3bf98e64f993",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:06.868 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/a3ad0e52-1d7c-490b-8038-3bf98e64f993/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:06.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:06 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:58:06.870+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/a3ad0e52-1d7c-490b-8038-3bf98e64f993/"}
+
+00:58:06.873 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:58:06.870+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/a3ad0e52-1d7c-490b-8038-3bf98e64f993/"
+}
+ 
+00:58:24.997 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:58:25.858 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:25.891 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:58:26.226 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:58:26.259 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"8192bc8c-2618-4dc6-bc13-877e2f4dae8f","status":true,"message":"El producto fue creado con éxito!"}
+
+00:58:26.264 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:58:26.271 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8192bc8c-2618-4dc6-bc13-877e2f4dae8f",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:26.273 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:26.278 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:58:26.276+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+00:58:26.281 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:58:26.276+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+00:58:26.311 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:26.318 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8192bc8c-2618-4dc6-bc13-877e2f4dae8f",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:26.328 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/8192bc8c-2618-4dc6-bc13-877e2f4dae8f/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:26.343 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 05:58:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+00:58:26.349 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:35
+Then status 401
+status code was: 406, expected: 401, response time in milliseconds: 14, url: http://localhost:8081/api/v1/product/8192bc8c-2618-4dc6-bc13-877e2f4dae8f/, response: 
+
+classpath:api/producto/listar.feature:35
+00:58:26.368 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:26.371 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8192bc8c-2618-4dc6-bc13-877e2f4dae8f",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:26.374 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/8192bc8c-2618-4dc6-bc13-877e2f4dae8f/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:26.380 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":98,"name":"Iphone 12","sku":"8192bc8c-2618-4dc6-bc13-877e2f4dae8f","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:58:26.382 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:45
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 6, url: http://localhost:8081/api/v1/product/8192bc8c-2618-4dc6-bc13-877e2f4dae8f/, response: 
+{"products":[{"id":98,"name":"Iphone 12","sku":"8192bc8c-2618-4dc6-bc13-877e2f4dae8f","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:45
+00:58:26.392 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:26.396 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8192bc8c-2618-4dc6-bc13-877e2f4dae8f",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:26.398 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/8192bc8c-2618-4dc6-bc13-877e2f4dae8f/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:26.403 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:58:26.402+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/8192bc8c-2618-4dc6-bc13-877e2f4dae8f/"}
+
+00:58:26.404 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:58:26.402+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/8192bc8c-2618-4dc6-bc13-877e2f4dae8f/"
+}
+ 
+00:58:47.389 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:58:48.301 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:48.337 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:58:48.660 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:58:48.688 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"83894cde-e99f-49f3-b417-ffcc079e32f7","status":true,"message":"El producto fue creado con éxito!"}
+
+00:58:48.693 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:58:48.699 [main] INFO  com.intuit.karate - [print] {
+  "sku": "83894cde-e99f-49f3-b417-ffcc079e32f7",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:48.703 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:48.708 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:58:48.707+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+00:58:48.711 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:58:48.707+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+00:58:48.740 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:48.745 [main] INFO  com.intuit.karate - [print] {
+  "sku": "83894cde-e99f-49f3-b417-ffcc079e32f7",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:48.757 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/83894cde-e99f-49f3-b417-ffcc079e32f7/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:48.765 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 05:58:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+00:58:48.767 [main] INFO  com.intuit.karate - [print]  
+00:58:48.773 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:37
+* match response.message == 'No autorizado'
+match failed: EQUALS
+  $ | data types don't match (NULL:STRING)
+  null
+  'No autorizado'
+
+classpath:api/producto/listar.feature:37
+00:58:48.792 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:48.796 [main] INFO  com.intuit.karate - [print] {
+  "sku": "83894cde-e99f-49f3-b417-ffcc079e32f7",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:48.800 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/83894cde-e99f-49f3-b417-ffcc079e32f7/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:48.805 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":99,"name":"Iphone 12","sku":"83894cde-e99f-49f3-b417-ffcc079e32f7","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:58:48.812 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:45
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 5, url: http://localhost:8081/api/v1/product/83894cde-e99f-49f3-b417-ffcc079e32f7/, response: 
+{"products":[{"id":99,"name":"Iphone 12","sku":"83894cde-e99f-49f3-b417-ffcc079e32f7","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:45
+00:58:48.821 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:58:48.825 [main] INFO  com.intuit.karate - [print] {
+  "sku": "83894cde-e99f-49f3-b417-ffcc079e32f7",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:58:48.828 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/83894cde-e99f-49f3-b417-ffcc079e32f7/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:58:48.832 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:58:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:58:48.831+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/83894cde-e99f-49f3-b417-ffcc079e32f7/"}
+
+00:58:48.834 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:58:48.831+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/83894cde-e99f-49f3-b417-ffcc079e32f7/"
+}
+ 
+00:59:02.760 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:59:03.628 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:59:03.662 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+00:59:03.965 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+00:59:03.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:59:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe","status":true,"message":"El producto fue creado con éxito!"}
+
+00:59:03.997 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+00:59:04.003 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:59:04.007 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:59:04.012 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:59:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:59:04.010+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+00:59:04.014 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:59:04.010+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+00:59:04.040 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:59:04.045 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:59:04.055 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:59:04.061 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 05:59:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+00:59:04.062 [main] INFO  com.intuit.karate - [print]  
+00:59:04.069 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:59:04.072 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:59:04.075 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:59:04.080 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:59:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":100,"name":"Iphone 12","sku":"8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+00:59:04.086 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:44
+Then status 415
+status code was: 200, expected: 415, response time in milliseconds: 4, url: http://localhost:8081/api/v1/product/8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe/, response: 
+{"products":[{"id":100,"name":"Iphone 12","sku":"8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+classpath:api/producto/listar.feature:44
+00:59:04.109 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:59:04.112 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+00:59:04.114 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:59:04.118 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:59:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:59:04.116+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe/"}
+
+00:59:04.119 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:59:04.116+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe/"
+}
+ 
+01:00:40.640 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:00:41.585 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:00:41.620 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+01:00:41.943 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+01:00:41.974 [main] DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:00:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"4800e180-b485-461b-86d3-c017e1d4b824","status":true,"message":"El producto fue creado con éxito!"}
+
+01:00:41.978 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+01:00:41.983 [main] INFO  com.intuit.karate - [print] {
+  "sku": "4800e180-b485-461b-86d3-c017e1d4b824",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:00:41.988 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:00:41.993 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:00:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:00:41.991+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+01:00:41.995 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:00:41.991+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+01:00:42.022 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:00:42.027 [main] INFO  com.intuit.karate - [print] {
+  "sku": "4800e180-b485-461b-86d3-c017e1d4b824",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:00:42.039 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/4800e180-b485-461b-86d3-c017e1d4b824/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:00:42.091 [main] DEBUG com.intuit.karate - response time in milliseconds: 51
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 06:00:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+01:00:42.093 [main] INFO  com.intuit.karate - [print]  
+01:00:42.101 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:00:42.106 [main] INFO  com.intuit.karate - [print] {
+  "sku": "4800e180-b485-461b-86d3-c017e1d4b824",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:00:42.122 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:43
+When method path
+js failed:
+>>>>
+01: path
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "path" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:api/producto/listar.feature:43
+01:00:42.148 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:00:42.153 [main] INFO  com.intuit.karate - [print] {
+  "sku": "4800e180-b485-461b-86d3-c017e1d4b824",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:00:42.156 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/4800e180-b485-461b-86d3-c017e1d4b824/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:00:42.227 [main] DEBUG com.intuit.karate - response time in milliseconds: 71
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:00:41 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:00:42.225+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/4800e180-b485-461b-86d3-c017e1d4b824/"}
+
+01:00:42.229 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:00:42.225+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/4800e180-b485-461b-86d3-c017e1d4b824/"
+}
+ 
+01:01:01.386 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:01:02.244 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:02.277 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+01:01:02.580 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+01:01:02.612 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"d4938ca1-7cf1-414d-a3c8-caf2b8b02187","status":true,"message":"El producto fue creado con éxito!"}
+
+01:01:02.616 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+01:01:02.624 [main] INFO  com.intuit.karate - [print] {
+  "sku": "d4938ca1-7cf1-414d-a3c8-caf2b8b02187",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:02.628 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:02.634 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:02.632+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+01:01:02.636 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:02.632+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+01:01:02.663 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:02.668 [main] INFO  com.intuit.karate - [print] {
+  "sku": "d4938ca1-7cf1-414d-a3c8-caf2b8b02187",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:02.678 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:02.684 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 06:01:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+01:01:02.685 [main] INFO  com.intuit.karate - [print]  
+01:01:02.694 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:02.698 [main] INFO  com.intuit.karate - [print] {
+  "sku": "d4938ca1-7cf1-414d-a3c8-caf2b8b02187",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:02.701 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:02.707 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:02.706+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/"}
+
+01:01:02.713 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:44
+Then status 415
+status code was: 405, expected: 415, response time in milliseconds: 5, url: http://localhost:8081/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/, response: 
+{"timestamp":"2024-10-09T06:01:02.706+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/"}
+classpath:api/producto/listar.feature:44
+01:01:02.742 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:02.745 [main] INFO  com.intuit.karate - [print] {
+  "sku": "d4938ca1-7cf1-414d-a3c8-caf2b8b02187",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:02.746 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:02.750 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:02.749+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/"}
+
+01:01:02.751 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:02.749+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/d4938ca1-7cf1-414d-a3c8-caf2b8b02187/"
+}
+ 
+01:01:15.126 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:01:16.003 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:16.037 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+01:01:16.349 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+01:01:16.378 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"47c979c5-d46a-42df-8688-dceda5a73612","status":true,"message":"El producto fue creado con éxito!"}
+
+01:01:16.381 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+01:01:16.385 [main] INFO  com.intuit.karate - [print] {
+  "sku": "47c979c5-d46a-42df-8688-dceda5a73612",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:16.388 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:16.393 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:16.392+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+01:01:16.396 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:16.392+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+01:01:16.425 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:16.430 [main] INFO  com.intuit.karate - [print] {
+  "sku": "47c979c5-d46a-42df-8688-dceda5a73612",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:16.442 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/47c979c5-d46a-42df-8688-dceda5a73612/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:16.449 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 06:01:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+01:01:16.452 [main] INFO  com.intuit.karate - [print]  
+01:01:16.460 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:16.464 [main] INFO  com.intuit.karate - [print] {
+  "sku": "47c979c5-d46a-42df-8688-dceda5a73612",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:16.467 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/47c979c5-d46a-42df-8688-dceda5a73612/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:16.471 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:16.469+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/47c979c5-d46a-42df-8688-dceda5a73612/"}
+
+01:01:16.473 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:16.469+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/47c979c5-d46a-42df-8688-dceda5a73612/"
+}
+ 
+01:01:16.476 [main] ERROR com.intuit.karate - classpath:api/producto/listar.feature:46
+* match response.message == 'Tipo de contenido no soportado'
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  '#notpresent'
+  'Tipo de contenido no soportado'
+
+classpath:api/producto/listar.feature:46
+01:01:16.500 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:16.503 [main] INFO  com.intuit.karate - [print] {
+  "sku": "47c979c5-d46a-42df-8688-dceda5a73612",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:16.506 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/47c979c5-d46a-42df-8688-dceda5a73612/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:16.510 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:16 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:16.509+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/47c979c5-d46a-42df-8688-dceda5a73612/"}
+
+01:01:16.512 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:16.509+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/47c979c5-d46a-42df-8688-dceda5a73612/"
+}
+ 
+01:01:34.203 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:01:35.086 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:35.121 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+01:01:35.416 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+01:01:35.445 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"44e41ab0-8aad-439d-a578-d5278450d6c5","status":true,"message":"El producto fue creado con éxito!"}
+
+01:01:35.449 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+01:01:35.453 [main] INFO  com.intuit.karate - [print] {
+  "sku": "44e41ab0-8aad-439d-a578-d5278450d6c5",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:35.456 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:35.461 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:35.460+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+01:01:35.463 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:35.460+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+01:01:35.486 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:35.492 [main] INFO  com.intuit.karate - [print] {
+  "sku": "44e41ab0-8aad-439d-a578-d5278450d6c5",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:35.504 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/44e41ab0-8aad-439d-a578-d5278450d6c5/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:35.510 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 06:01:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+01:01:35.512 [main] INFO  com.intuit.karate - [print]  
+01:01:35.518 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:35.522 [main] INFO  com.intuit.karate - [print] {
+  "sku": "44e41ab0-8aad-439d-a578-d5278450d6c5",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:35.524 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/44e41ab0-8aad-439d-a578-d5278450d6c5/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:35.527 [main] DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:35.527+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/44e41ab0-8aad-439d-a578-d5278450d6c5/"}
+
+01:01:35.529 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:35.527+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/44e41ab0-8aad-439d-a578-d5278450d6c5/"
+}
+ 
+01:01:35.538 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:35.541 [main] INFO  com.intuit.karate - [print] {
+  "sku": "44e41ab0-8aad-439d-a578-d5278450d6c5",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:35.543 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/44e41ab0-8aad-439d-a578-d5278450d6c5/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:35.547 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:35.546+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/44e41ab0-8aad-439d-a578-d5278450d6c5/"}
+
+01:01:35.548 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:35.546+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/44e41ab0-8aad-439d-a578-d5278450d6c5/"
+}
+ 
+01:01:50.982 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:01:51.850 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:51.886 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('nuevo.feature')
+01:01:52.218 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 12","description":"Este es un smartphone de alta gama","price":1200}
+
+01:01:52.244 [main] DEBUG com.intuit.karate - response time in milliseconds: 23
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"b60454b6-3a65-43e2-b29d-1d708cc9feb2","status":true,"message":"El producto fue creado con éxito!"}
+
+01:01:52.248 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('nuevo.feature')
+01:01:52.254 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b60454b6-3a65-43e2-b29d-1d708cc9feb2",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:52.268 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:52.273 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"products":[{"id":105,"name":"Iphone 12","sku":"b60454b6-3a65-43e2-b29d-1d708cc9feb2","description":"Este es un smartphone de alta gama","price":1200.0}],"status":true,"message":"El producto fue encontrado"}
+
+01:01:52.276 [main] INFO  com.intuit.karate - [print] {
+  "products": [
+    {
+      "id": 105,
+      "name": "Iphone 12",
+      "sku": "b60454b6-3a65-43e2-b29d-1d708cc9feb2",
+      "description": "Este es un smartphone de alta gama",
+      "price": 1200.0
+    }
+  ],
+  "status": true,
+  "message": "El producto fue encontrado"
+}
+ 
+01:01:52.308 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:52.312 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b60454b6-3a65-43e2-b29d-1d708cc9feb2",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:52.315 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:52.319 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:52.318+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+01:01:52.320 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:52.318+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+01:01:52.329 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:52.334 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b60454b6-3a65-43e2-b29d-1d708cc9feb2",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:52.336 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/
+1 > Accept: application/jsonssss
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:52.342 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 406
+1 < Accept: application/json, application/*+json
+1 < Content-Length: 0
+1 < Date: Wed, 09 Oct 2024 06:01:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+
+
+01:01:52.344 [main] INFO  com.intuit.karate - [print]  
+01:01:52.352 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:52.356 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b60454b6-3a65-43e2-b29d-1d708cc9feb2",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:52.359 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/
+1 > Accept: application/json
+1 > Content-Type: text/plain
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:52.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:52.361+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/"}
+
+01:01:52.364 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:52.361+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/"
+}
+ 
+01:01:52.372 [main] INFO  com.intuit.karate - karate.env system property was: null 
+01:01:52.375 [main] INFO  com.intuit.karate - [print] {
+  "sku": "b60454b6-3a65-43e2-b29d-1d708cc9feb2",
+  "status": true,
+  "message": "El producto fue creado con éxito!"
+}
+ 
+01:01:52.377 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/
+1 > Accept: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:01:52.381 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 405
+1 < Allow: DELETE, PATCH, PUT, GET
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 06:01:52 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T06:01:52.380+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/"}
+
+01:01:52.382 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T06:01:52.380+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/b60454b6-3a65-43e2-b29d-1d708cc9feb2/"
+}
+ 
