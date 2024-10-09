@@ -34,7 +34,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     When method post
     Then status 201
 
-
+  @happypath
   Scenario: Crear un producto de forma exitosa usando json
     Given url 'http://localhost:8081/api/v1/product/'
     And request { name: 'Iphone 12', description: 'Este es un smartphone de alta gama', price: 1200 }
@@ -43,6 +43,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     When method post
     Then status 201
 
+  @happypath
   Scenario: Crear un producto de forma exitosa, usando path y validando el response
     Given path "/api/v1/product/","/"
     And request nuevo_producto
@@ -52,6 +53,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     Then status 201
     And match $ == {"sku":'#notnull',"status":true,"message":"El producto fue creado con éxito!"}
 
+  @happypath
   Scenario: Crear un producto de forma exitosa, path, response and headers
     Given path ruta_crear,"/"
     And request nuevo_producto
@@ -60,7 +62,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     And match responseType == 'json'
     And match $ == {"sku":'#notnull',"status":true,"message":"El producto fue creado con éxito!"}
 
-
+  @happypath
   Scenario Outline: Crear un producto de forma exitosa, path, response usando examples
     Given path ruta_crear,"/"
     And request <producto>
@@ -95,7 +97,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     * print response
     * match response.message == 'La descripción del producto no fue proporcionada'
 
-
+  @sadpath
   Scenario: Crear un producto con precio string
     * path ruta_crear
     When method post
@@ -103,6 +105,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     * print response
     * match response.error == '#string'
 
+  @sadpath
   Scenario: Crear un producto con header faltante
     * path ruta_crear,"/"
     And header Accept = ''

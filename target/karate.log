@@ -3846,3 +3846,1988 @@ classpath:api/producto/crear.feature:70
   "path": "/api/v1/product/"
 }
  
+23:58:37.362 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:58:38.273 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:58:38.648 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+23:58:38.680 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:58:38 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"5381ab38-5a99-43f3-bf9f-487b95cff617","status":true,"message":"El producto fue creado con éxito!"}
+
+23:58:38.692 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/5381ab38-5a99-43f3-bf9f-487b95cff617/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+23:58:38.800 [main] DEBUG com.intuit.karate - response time in milliseconds: 108
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 04:58:38 GMT
+2 < Connection: close
+{"sku":"5381ab38-5a99-43f3-bf9f-487b95cff617","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:58:38.802 [main] INFO  com.intuit.karate - [print] {
+  "sku": "5381ab38-5a99-43f3-bf9f-487b95cff617",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:59:48.148 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:59:49.023 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:59:49.389 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+23:59:49.422 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:59:49 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"696aac2a-3437-436a-b82c-cb6de5244530","status":true,"message":"El producto fue creado con éxito!"}
+
+23:59:49.433 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/696aac2a-3437-436a-b82c-cb6de5244530/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+23:59:49.440 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 04:59:49 GMT
+2 < Connection: close
+{"sku":"696aac2a-3437-436a-b82c-cb6de5244530","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:59:49.443 [main] INFO  com.intuit.karate - [print] {
+  "sku": "696aac2a-3437-436a-b82c-cb6de5244530",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:01:07.431 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:01:08.344 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:01:08.699 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:01:08.730 [main] DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:01:08 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"0b6409bb-2c27-4c26-8a5b-6ea889742c2a","status":true,"message":"El producto fue creado con éxito!"}
+
+00:01:08.742 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/0b6409bb-2c27-4c26-8a5b-6ea889742c2a/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:01:08.749 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:01:08 GMT
+2 < Connection: close
+{"sku":"0b6409bb-2c27-4c26-8a5b-6ea889742c2a","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:01:08.752 [main] INFO  com.intuit.karate - [print] {
+  "sku": "0b6409bb-2c27-4c26-8a5b-6ea889742c2a",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:02:25.428 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:02:26.313 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:02:26.658 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:02:26.688 [main] DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:02:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc","status":true,"message":"El producto fue creado con éxito!"}
+
+00:02:26.699 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:02:26.705 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:02:26 GMT
+2 < Connection: close
+{"sku":"753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:02:26.707 [main] INFO  com.intuit.karate - [print] {
+  "sku": "753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:02:26.734 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:02:26.738 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:02:26.743 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:02:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"ab09ae3d-c881-4852-8acf-ae6006627125","status":true,"message":"El producto fue creado con éxito!"}
+
+00:02:26.748 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/ab09ae3d-c881-4852-8acf-ae6006627125/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 94
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":-9999}
+
+00:02:26.762 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+2 < 200
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:02:26 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"sku":"ab09ae3d-c881-4852-8acf-ae6006627125","status":true,"message":"El producto fue actualizado con éxito"}
+
+00:02:26.769 [main] ERROR com.intuit.karate - classpath:api/producto/actualizar.feature:50
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 14, url: http://localhost:8081/api/v1/product/ab09ae3d-c881-4852-8acf-ae6006627125/, response: 
+{"sku":"ab09ae3d-c881-4852-8acf-ae6006627125","status":true,"message":"El producto fue actualizado con éxito"}
+classpath:api/producto/actualizar.feature:50
+00:03:26.679 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:03:27.530 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:03:27.861 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:03:27.889 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:03:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"6751882c-3a3c-43b7-b179-5ca6df54b680","status":true,"message":"El producto fue creado con éxito!"}
+
+00:03:27.901 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/6751882c-3a3c-43b7-b179-5ca6df54b680/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:03:27.908 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:03:27 GMT
+2 < Connection: close
+{"sku":"6751882c-3a3c-43b7-b179-5ca6df54b680","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:03:27.911 [main] INFO  com.intuit.karate - [print] {
+  "sku": "6751882c-3a3c-43b7-b179-5ca6df54b680",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:03:27.936 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:03:27.940 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:03:27.947 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:03:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"de7e513c-aecc-49a7-bd46-03c3c24c1b94","status":true,"message":"El producto fue creado con éxito!"}
+
+00:03:27.951 [main] ERROR com.intuit.karate - classpath:api/producto/actualizar.feature:46
+And request { name: 'Iphone Actualizado', description: 'Este es un smartphone de alta gama', price: }
+net.minidev.json.parser.ParseException: Unexpected character (}) at position 88.
+classpath:api/producto/actualizar.feature:46
+00:04:01.882 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:04:02.774 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:04:03.103 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:04:03.130 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:04:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5","status":true,"message":"El producto fue creado con éxito!"}
+
+00:04:03.139 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:04:03.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:04:03 GMT
+2 < Connection: close
+{"sku":"1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:04:03.147 [main] INFO  com.intuit.karate - [print] {
+  "sku": "1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:04:03.172 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:04:03.176 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:04:03.180 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:04:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"4d923382-16ff-4367-ac0e-1f4ec3a617c9","status":true,"message":"El producto fue creado con éxito!"}
+
+00:04:03.185 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/4d923382-16ff-4367-ac0e-1f4ec3a617c9
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:04:03.193 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:04:03 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:04:03.192+00:00","status":404,"error":"Not Found","path":"/api/v1/product/4d923382-16ff-4367-ac0e-1f4ec3a617c9"}
+
+00:04:03.200 [main] ERROR com.intuit.karate - classpath:api/producto/actualizar.feature:50
+Then status 400
+status code was: 404, expected: 400, response time in milliseconds: 8, url: http://localhost:8081/api/v1/product/4d923382-16ff-4367-ac0e-1f4ec3a617c9, response: 
+{"timestamp":"2024-10-09T05:04:03.192+00:00","status":404,"error":"Not Found","path":"/api/v1/product/4d923382-16ff-4367-ac0e-1f4ec3a617c9"}
+classpath:api/producto/actualizar.feature:50
+00:04:24.766 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:04:25.630 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:04:25.988 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:04:26.016 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:04:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"c30bbcb8-7a08-4af2-aec9-d19502d20f90","status":true,"message":"El producto fue creado con éxito!"}
+
+00:04:26.024 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/c30bbcb8-7a08-4af2-aec9-d19502d20f90/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:04:26.030 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:04:26 GMT
+2 < Connection: close
+{"sku":"c30bbcb8-7a08-4af2-aec9-d19502d20f90","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:04:26.032 [main] INFO  com.intuit.karate - [print] {
+  "sku": "c30bbcb8-7a08-4af2-aec9-d19502d20f90",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:04:26.059 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:04:26.065 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:04:26.069 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:04:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"52e7b344-7469-4896-a204-bdfe4e70e856","status":true,"message":"El producto fue creado con éxito!"}
+
+00:04:26.073 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/52e7b344-7469-4896-a204-bdfe4e70e856
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:04:26.079 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:04:26 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:04:26.078+00:00","status":404,"error":"Not Found","path":"/api/v1/product/52e7b344-7469-4896-a204-bdfe4e70e856"}
+
+00:04:26.081 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:04:26.078+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/52e7b344-7469-4896-a204-bdfe4e70e856"
+}
+ 
+00:05:16.593 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:05:17.472 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:05:17.829 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:05:17.856 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:05:17 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"2191197d-754f-4648-9378-e77ed08eb7f3","status":true,"message":"El producto fue creado con éxito!"}
+
+00:05:17.865 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/2191197d-754f-4648-9378-e77ed08eb7f3/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:05:17.870 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:05:17 GMT
+2 < Connection: close
+{"sku":"2191197d-754f-4648-9378-e77ed08eb7f3","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:05:17.873 [main] INFO  com.intuit.karate - [print] {
+  "sku": "2191197d-754f-4648-9378-e77ed08eb7f3",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:05:17.903 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:05:17.909 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:05:17.914 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:05:17 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5","status":true,"message":"El producto fue creado con éxito!"}
+
+00:05:17.919 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:05:17.924 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:05:17 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:05:17.923+00:00","status":404,"error":"Not Found","path":"/api/v1/product/098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5"}
+
+00:05:17.926 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:05:17.923+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5"
+}
+ 
+00:06:34.277 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:06:35.192 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:35.566 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:06:35.597 [main] DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:06:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"bef7122c-147f-49ab-bd72-2b54c23a4edd","status":true,"message":"El producto fue creado con éxito!"}
+
+00:06:35.606 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/bef7122c-147f-49ab-bd72-2b54c23a4edd/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:06:35.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:06:35 GMT
+2 < Connection: close
+{"sku":"bef7122c-147f-49ab-bd72-2b54c23a4edd","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:06:35.616 [main] INFO  com.intuit.karate - [print] {
+  "sku": "bef7122c-147f-49ab-bd72-2b54c23a4edd",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:06:35.646 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:35.652 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:06:35.657 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:06:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"f68b2642-6ac1-45a8-859b-04da47054c0a","status":true,"message":"El producto fue creado con éxito!"}
+
+00:06:35.662 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/f68b2642-6ac1-45a8-859b-04da47054c0a
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:06:35.669 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:06:35 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:06:35.667+00:00","status":404,"error":"Not Found","path":"/api/v1/product/f68b2642-6ac1-45a8-859b-04da47054c0a"}
+
+00:06:35.670 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:06:35.667+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/f68b2642-6ac1-45a8-859b-04da47054c0a"
+}
+ 
+00:06:35.680 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:06:35.683 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:06:35.688 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:06:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73","status":true,"message":"El producto fue creado con éxito!"}
+
+00:06:35.693 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73/
+2 > Accept: 
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:06:35.703 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+2 < 200
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:06:35 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"sku":"f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73","status":true,"message":"El producto fue actualizado con éxito"}
+
+00:06:35.708 [main] ERROR com.intuit.karate - classpath:api/producto/actualizar.feature:61
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 7, url: http://localhost:8081/api/v1/product/f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73/, response: 
+{"sku":"f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73","status":true,"message":"El producto fue actualizado con éxito"}
+classpath:api/producto/actualizar.feature:61
+00:07:34.576 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:07:35.451 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:07:35.800 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:07:35.829 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:07:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"11df6ed8-4d6c-46a9-841b-8e4d5b6d760c","status":true,"message":"El producto fue creado con éxito!"}
+
+00:07:35.839 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/11df6ed8-4d6c-46a9-841b-8e4d5b6d760c/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:07:35.845 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:07:35 GMT
+2 < Connection: close
+{"sku":"11df6ed8-4d6c-46a9-841b-8e4d5b6d760c","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:07:35.847 [main] INFO  com.intuit.karate - [print] {
+  "sku": "11df6ed8-4d6c-46a9-841b-8e4d5b6d760c",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:07:35.873 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:07:35.877 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:07:35.882 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:07:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"ae1a2e1d-fafc-41b7-aa20-c8745fd5c009","status":true,"message":"El producto fue creado con éxito!"}
+
+00:07:35.887 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/ae1a2e1d-fafc-41b7-aa20-c8745fd5c009
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:07:35.893 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:07:35 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:07:35.891+00:00","status":404,"error":"Not Found","path":"/api/v1/product/ae1a2e1d-fafc-41b7-aa20-c8745fd5c009"}
+
+00:07:35.895 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:07:35.891+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/ae1a2e1d-fafc-41b7-aa20-c8745fd5c009"
+}
+ 
+00:07:35.907 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:07:35.910 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:07:35.915 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:07:35 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"a5c21aa0-850c-4782-8cb2-d15d6c409188","status":true,"message":"El producto fue creado con éxito!"}
+
+00:07:35.920 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:07:35.926 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 405
+2 < Allow: POST, GET
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:07:35 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:07:35.925+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+
+00:07:35.931 [main] ERROR com.intuit.karate - classpath:api/producto/actualizar.feature:61
+Then status 401
+status code was: 405, expected: 401, response time in milliseconds: 6, url: http://localhost:8081/api/v1/product/, response: 
+{"timestamp":"2024-10-09T05:07:35.925+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+classpath:api/producto/actualizar.feature:61
+00:08:44.618 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:08:45.518 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:08:45.868 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:08:45.897 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:08:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"bce132ad-3e2f-4e8b-8228-6b9dc7a08537","status":true,"message":"El producto fue creado con éxito!"}
+
+00:08:45.906 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/bce132ad-3e2f-4e8b-8228-6b9dc7a08537/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:08:45.913 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:08:45 GMT
+2 < Connection: close
+{"sku":"bce132ad-3e2f-4e8b-8228-6b9dc7a08537","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:08:45.917 [main] INFO  com.intuit.karate - [print] {
+  "sku": "bce132ad-3e2f-4e8b-8228-6b9dc7a08537",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:08:45.945 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:08:45.951 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:08:45.956 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:08:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"ad26fb78-a00f-46cd-bbb9-d9af827d814a","status":true,"message":"El producto fue creado con éxito!"}
+
+00:08:45.961 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/ad26fb78-a00f-46cd-bbb9-d9af827d814a
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:08:45.969 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:08:45 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:08:45.967+00:00","status":404,"error":"Not Found","path":"/api/v1/product/ad26fb78-a00f-46cd-bbb9-d9af827d814a"}
+
+00:08:45.971 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:08:45.967+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/ad26fb78-a00f-46cd-bbb9-d9af827d814a"
+}
+ 
+00:08:45.980 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:08:45.983 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:08:45.988 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:08:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"8d75bd4d-8218-481f-b1e5-5458ef1fd6e5","status":true,"message":"El producto fue creado con éxito!"}
+
+00:08:45.994 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:08:45.998 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+2 < 405
+2 < Allow: POST, GET
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:08:45 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:08:45.997+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+
+00:08:46.007 [main] ERROR com.intuit.karate - classpath:api/producto/actualizar.feature:61
+Then status 415
+status code was: 405, expected: 415, response time in milliseconds: 4, url: http://localhost:8081/api/v1/product/, response: 
+{"timestamp":"2024-10-09T05:08:45.997+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+classpath:api/producto/actualizar.feature:61
+00:09:03.644 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:09:04.516 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:09:04.853 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:04.879 [main] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:09:04 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"db4a1199-c1c6-4276-a346-227c2b64dd37","status":true,"message":"El producto fue creado con éxito!"}
+
+00:09:04.891 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/db4a1199-c1c6-4276-a346-227c2b64dd37/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:09:04.897 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:09:04 GMT
+2 < Connection: close
+{"sku":"db4a1199-c1c6-4276-a346-227c2b64dd37","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:09:04.899 [main] INFO  com.intuit.karate - [print] {
+  "sku": "db4a1199-c1c6-4276-a346-227c2b64dd37",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:09:04.926 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:09:04.931 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:04.935 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:09:04 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"984f8260-e211-4d21-a57d-ab5dffcf0782","status":true,"message":"El producto fue creado con éxito!"}
+
+00:09:04.940 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/984f8260-e211-4d21-a57d-ab5dffcf0782
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:09:04.943 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:09:04 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:09:04.942+00:00","status":404,"error":"Not Found","path":"/api/v1/product/984f8260-e211-4d21-a57d-ab5dffcf0782"}
+
+00:09:04.945 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:09:04.942+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/984f8260-e211-4d21-a57d-ab5dffcf0782"
+}
+ 
+00:09:04.953 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:09:04.956 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:04.961 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:09:04 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"08b0c2a2-9189-4a3f-9ac4-c6e8e15ea766","status":true,"message":"El producto fue creado con éxito!"}
+
+00:09:04.965 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:04.969 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+2 < 405
+2 < Allow: POST, GET
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:09:04 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:09:04.968+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+
+00:09:04.970 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:09:04.968+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/"
+}
+ 
+00:09:58.388 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:09:59.238 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:09:59.570 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:59.603 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:09:59 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"0e54f489-74c9-4aed-8868-7cfa264df41c","status":true,"message":"El producto fue creado con éxito!"}
+
+00:09:59.614 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/0e54f489-74c9-4aed-8868-7cfa264df41c/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:09:59.624 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:09:59 GMT
+2 < Connection: close
+{"sku":"0e54f489-74c9-4aed-8868-7cfa264df41c","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:09:59.626 [main] INFO  com.intuit.karate - [print] {
+  "sku": "0e54f489-74c9-4aed-8868-7cfa264df41c",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:09:59.652 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:09:59.657 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:59.662 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:09:59 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"3c63055e-b245-43c5-8226-dbc4a8db7b6f","status":true,"message":"El producto fue creado con éxito!"}
+
+00:09:59.667 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/3c63055e-b245-43c5-8226-dbc4a8db7b6f
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:09:59.672 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:09:59 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:09:59.671+00:00","status":404,"error":"Not Found","path":"/api/v1/product/3c63055e-b245-43c5-8226-dbc4a8db7b6f"}
+
+00:09:59.673 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:09:59.671+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/3c63055e-b245-43c5-8226-dbc4a8db7b6f"
+}
+ 
+00:09:59.683 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:09:59.686 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:59.690 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:09:59 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"9f8cc428-46e0-469d-b2fc-33ccd516a433","status":true,"message":"El producto fue creado con éxito!"}
+
+00:09:59.695 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:09:59.700 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+2 < 405
+2 < Allow: POST, GET
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:09:59 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:09:59.698+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+
+00:09:59.701 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:09:59.698+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/"
+}
+ 
+00:10:24.536 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:10:25.417 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:10:25.752 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:10:25.780 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"a8229a78-697e-4c7e-b957-ba75ae434148","status":true,"message":"El producto fue creado con éxito!"}
+
+00:10:25.789 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/a8229a78-697e-4c7e-b957-ba75ae434148/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:10:25.795 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+2 < Connection: close
+{"sku":"a8229a78-697e-4c7e-b957-ba75ae434148","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:10:25.798 [main] INFO  com.intuit.karate - [print] {
+  "sku": "a8229a78-697e-4c7e-b957-ba75ae434148",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:10:25.826 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:10:25.830 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:10:25.836 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"f78bfe3f-583b-4d29-b599-05f2516be730","status":true,"message":"El producto fue creado con éxito!"}
+
+00:10:25.840 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/f78bfe3f-583b-4d29-b599-05f2516be730
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:10:25.845 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:10:25.844+00:00","status":404,"error":"Not Found","path":"/api/v1/product/f78bfe3f-583b-4d29-b599-05f2516be730"}
+
+00:10:25.846 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:10:25.844+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/f78bfe3f-583b-4d29-b599-05f2516be730"
+}
+ 
+00:10:25.855 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:10:25.859 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:10:25.863 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"1cd48678-cc62-4189-a0f0-e8f6a61b127b","status":true,"message":"El producto fue creado con éxito!"}
+
+00:10:25.867 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:10:25.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+2 < 405
+2 < Allow: POST, GET
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:10:25.870+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+
+00:10:25.872 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:10:25.870+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/"
+}
+ 
+00:10:25.881 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:10:25.884 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:10:25.889 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"e1aa2ad7-25f8-4112-a30d-de195883f51f","status":true,"message":"El producto fue creado con éxito!"}
+
+00:10:25.892 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/e1aa2ad7-25f8-4112-a30d-de195883f51f/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: text/plain; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:10:25.898 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 415
+2 < Accept: application/json, application/*+json
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:10:25 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:10:25.897+00:00","status":415,"error":"Unsupported Media Type","path":"/api/v1/product/e1aa2ad7-25f8-4112-a30d-de195883f51f/"}
+
+00:10:25.899 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:10:25.897+00:00",
+  "status": 415,
+  "error": "Unsupported Media Type",
+  "path": "/api/v1/product/e1aa2ad7-25f8-4112-a30d-de195883f51f/"
+}
+ 
+00:11:24.083 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:11:24.937 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:25.268 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:25.292 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"2cd7f4e5-bb03-4f8c-8378-bb274989ea0e","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:25.303 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/2cd7f4e5-bb03-4f8c-8378-bb274989ea0e/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:11:25.309 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+2 < Connection: close
+{"sku":"2cd7f4e5-bb03-4f8c-8378-bb274989ea0e","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:11:25.312 [main] INFO  com.intuit.karate - [print] {
+  "sku": "2cd7f4e5-bb03-4f8c-8378-bb274989ea0e",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:11:25.340 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:25.345 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:25.349 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"a971fdf8-6bb2-442a-a67b-ad213e88182f","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:25.354 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/a971fdf8-6bb2-442a-a67b-ad213e88182f
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:11:25.358 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:11:25.357+00:00","status":404,"error":"Not Found","path":"/api/v1/product/a971fdf8-6bb2-442a-a67b-ad213e88182f"}
+
+00:11:25.360 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:11:25.357+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/a971fdf8-6bb2-442a-a67b-ad213e88182f"
+}
+ 
+00:11:25.368 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:25.371 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:25.376 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"0bbfac20-eba2-42be-ac82-c3a92b60b1d0","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:25.381 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:25.385 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+2 < 405
+2 < Allow: POST, GET
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:11:25.384+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+
+00:11:25.387 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:11:25.384+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/"
+}
+ 
+00:11:25.395 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:25.400 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:25.404 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"4597bda1-4dbf-42ee-82aa-6639cd2c80f4","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:25.410 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/4597bda1-4dbf-42ee-82aa-6639cd2c80f4/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: text/plain; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:25.415 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 415
+2 < Accept: application/json, application/*+json
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:25 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:11:25.414+00:00","status":415,"error":"Unsupported Media Type","path":"/api/v1/product/4597bda1-4dbf-42ee-82aa-6639cd2c80f4/"}
+
+00:11:25.417 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:11:25.414+00:00",
+  "status": 415,
+  "error": "Unsupported Media Type",
+  "path": "/api/v1/product/4597bda1-4dbf-42ee-82aa-6639cd2c80f4/"
+}
+ 
+00:11:42.619 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:11:43.479 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:43.833 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:43.861 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"8d653719-441f-42b3-a8ba-7710edc5ef52","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:43.872 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/8d653719-441f-42b3-a8ba-7710edc5ef52/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 29
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado"}
+
+00:11:43.879 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+2 < 400
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+2 < Connection: close
+{"sku":"8d653719-441f-42b3-a8ba-7710edc5ef52","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+00:11:43.881 [main] INFO  com.intuit.karate - [print] {
+  "sku": "8d653719-441f-42b3-a8ba-7710edc5ef52",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+00:11:43.910 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:43.915 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:43.919 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"21704507-6efd-4322-85da-21aa7d9ed057","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:43.924 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/21704507-6efd-4322-85da-21aa7d9ed057
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 91
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":10}
+
+00:11:43.929 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+2 < 404
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:11:43.928+00:00","status":404,"error":"Not Found","path":"/api/v1/product/21704507-6efd-4322-85da-21aa7d9ed057"}
+
+00:11:43.931 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:11:43.928+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product/21704507-6efd-4322-85da-21aa7d9ed057"
+}
+ 
+00:11:43.940 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:43.943 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:43.947 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"59620d1c-6e3a-46cb-a23e-1f607937af25","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:43.951 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:43.954 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+2 < 405
+2 < Allow: POST, GET
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:11:43.953+00:00","status":405,"error":"Method Not Allowed","path":"/api/v1/product/"}
+
+00:11:43.956 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:11:43.953+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/v1/product/"
+}
+ 
+00:11:43.965 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:11:43.969 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Accept: application/json
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 99","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:43.975 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"sku":"c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a","status":true,"message":"El producto fue creado con éxito!"}
+
+00:11:43.980 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:8081/api/v1/product/c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a/
+2 > Accept: application/json
+2 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+2 > Content-Type: text/plain; charset=UTF-8
+2 > Content-Length: 93
+2 > Host: localhost:8081
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Iphone Actualizado","description":"Este es un smartphone de alta gama","price":9999}
+
+00:11:43.984 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+2 < 415
+2 < Accept: application/json, application/*+json
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Wed, 09 Oct 2024 05:11:43 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"timestamp":"2024-10-09T05:11:43.983+00:00","status":415,"error":"Unsupported Media Type","path":"/api/v1/product/c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a/"}
+
+00:11:43.985 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T05:11:43.983+00:00",
+  "status": 415,
+  "error": "Unsupported Media Type",
+  "path": "/api/v1/product/c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a/"
+}
+ 
