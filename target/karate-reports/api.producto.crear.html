@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,13 +49,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2024-10-08 11:11:57 p. m.</div>
+    <div>2024-10-08 11:37:15 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
             <a href="#[6:83]"><span>[6:83]</span> <span>Crear un producto con datos faltantes</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:102]"><span>[7:102]</span> <span>Crear un producto con precio string</span></a>
           </div>
         </div>
       </div>
@@ -81,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>359</span>
+              <span>ms:</span>&nbsp;<span>357</span>
             </div>
           </div>
           <div class="step-row">
@@ -113,7 +116,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">23:11:57.408 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.5">23:37:14.854 karate.env system property was: null 
 </div>   
 
   
@@ -161,7 +164,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def nuevo_producto =</span>
       </div>
     </div>
-    <div class="time-cell passed">28</div>
+    <div class="time-cell passed">23</div>
   </div>
 
    
@@ -335,7 +338,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request producto_invalido</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -419,7 +422,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">307</div>
+    <div class="time-cell passed">310</div>
   </div>
 
    
@@ -428,7 +431,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.94">23:11:57.748 request:
+  <div class="preformatted" data-parent="0.94">23:37:15.193 request:
 1 &gt; POST http://localhost:8081/api/v1/product/
 1 &gt; Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
 1 &gt; Accept: application/json
@@ -440,11 +443,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Iphone 14&quot;}
 
-23:11:57.779 response time in milliseconds: 29
+23:37:15.222 response time in milliseconds: 28
 1 &lt; 400
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Wed, 09 Oct 2024 04:11:57 GMT
+1 &lt; Date: Wed, 09 Oct 2024 04:37:15 GMT
 1 &lt; Connection: close
 {&quot;sku&quot;:&quot;&quot;,&quot;status&quot;:false,&quot;message&quot;:&quot;La descripción del producto no fue proporcionada&quot;}
 
@@ -504,7 +507,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.96">23:11:57.783 [print] {
+  <div class="preformatted" data-parent="0.96">23:37:15.227 [print] {
   &quot;sku&quot;: &quot;&quot;,
   &quot;status&quot;: false,
   &quot;message&quot;: &quot;La descripción del producto no fue proporcionada&quot;
@@ -529,7 +532,374 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>match response.message == &#39;La descripción del producto no fue proporcionada&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">13</div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:102]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">sadpath</a><a class="badge badge-primary" href="karate-tags.html">Test-json-404</a><a class="badge badge-primary" href="karate-tags.html">crear</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:102]</span>
+                <span class="scenario-name">Crear un producto con precio string</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:102]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8081&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:37:15.257 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ruta_crear = &#39;/api/v1/product/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def nuevo_producto =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7">{
+  &quot;name&quot;: &quot;Iphone 15&quot;,
+  &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+  &quot;price&quot;: 1500,
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer aGFzaGRzZnNkZnNkZnNkZnNk&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path ruta_crear</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.104">23:37:15.264 request:
+1 &gt; POST http://localhost:8081/api/v1/product
+1 &gt; Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:37:15.271 response time in milliseconds: 7
+1 &lt; 404
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 09 Oct 2024 04:37:15 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2024-10-09T04:37:15.269+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/product&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.106">23:37:15.273 [print] {
+  &quot;timestamp&quot;: &quot;2024-10-09T04:37:15.269+00:00&quot;,
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Not Found&quot;,
+  &quot;path&quot;: &quot;/api/v1/product&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.error == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    

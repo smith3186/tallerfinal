@@ -1930,3 +1930,1105 @@ classpath:api/producto/crear.feature:136
   "message": "La descripción del producto no fue proporcionada"
 }
  
+23:13:58.609 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:13:59.515 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:13:59.577 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:84
+* def producto_invalido =
+"""
+{
+  "name": "Iphone 14"
+  "description": "Este es un smartphone de alta gama",
+  "price": 1400mhskdg,
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected token " at position 25.
+classpath:api/producto/crear.feature:84
+23:13:59.603 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:13:59.885 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:13:59.914 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:13:59 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:13:59.917 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:14:34.116 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:14:34.994 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:35.356 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:14:35.391 [main] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:14:35 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:14:35.395 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:14:35.423 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:14:35.430 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:103
+* def producto_invalido =
+"""
+{
+  "name": "Iphone 14"
+  "description": "Este es un smartphone de alta gama",
+  "price": 1400gfgfdgdg,
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected token " at position 25.
+classpath:api/producto/crear.feature:103
+23:15:13.217 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:15:14.100 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:15:14.460 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:15:14.493 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:15:14 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:15:14.497 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:15:14.531 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:15:14.537 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:103
+* def producto_invalido =
+"""
+{
+  "name": "Iphone 14"
+  "description": "Este es un smartphone de alta gama",
+  "price": ,
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected token " at position 25.
+classpath:api/producto/crear.feature:103
+23:18:51.290 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:18:52.162 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:18:52.491 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:18:52.520 [main] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:18:52 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:18:52.523 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:18:52.552 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:18:52.568 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:103
+And request nuevo_productos
+js failed:
+>>>>
+01: nuevo_productos
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "nuevo_productos" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:api/producto/crear.feature:103
+23:21:43.556 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:21:44.483 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:21:44.832 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:21:44.860 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:21:44 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:21:44.864 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:21:44.892 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:21:44.899 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:21:44.907 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:21:44 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:21:44.904+00:00","status":404,"error":"Not Found","path":"/"}
+
+23:21:44.913 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:111
+Then status 400
+status code was: 404, expected: 400, response time in milliseconds: 8, url: http://localhost:8081, response: 
+{"timestamp":"2024-10-09T04:21:44.904+00:00","status":404,"error":"Not Found","path":"/"}
+classpath:api/producto/crear.feature:111
+23:23:04.179 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:23:05.052 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:05.405 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:23:05.438 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:23:05 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:23:05.441 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:23:05.476 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:05.481 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:103
+* def producto_invalido =
+"""
+{
+  "name": "Iphone 14"
+  "description": "Este es un smartphone de alta gama",
+  "price": 1400gfgfdgdg,
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected token " at position 25.
+classpath:api/producto/crear.feature:103
+23:23:52.307 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:23:53.196 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:53.533 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:23:53.562 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:23:53 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:23:53.566 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:23:53.600 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:23:53.606 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:103
+* def producto_invalido =
+"""
+{
+  "name": "Iphone 14"
+  "description": "Este es un smartphone de alta gama",
+  "price": -1400,
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected token " at position 25.
+classpath:api/producto/crear.feature:103
+23:25:16.517 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:25:17.364 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:17.702 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:25:17.737 [main] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:25:17 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:25:17.741 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:25:17.772 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:25:17.777 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:103
+* def producto_invalido =
+"""
+{
+  "name": "Iphone 14"
+  "description": "Este es un smartphone de alta gama",
+  "price": 1400,
+}
+"""
+net.minidev.json.parser.ParseException: Unexpected token " at position 25.
+classpath:api/producto/crear.feature:103
+23:27:24.491 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:27:25.373 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:27:25.721 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:27:25.750 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:27:25 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:27:25.753 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:27:25.782 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:27:25.800 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:104
+And request producto_invalido
+js failed:
+>>>>
+01: producto_invalido
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "producto_invalido" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:api/producto/crear.feature:104
+23:27:39.690 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:27:40.558 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:27:40.895 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:27:40.924 [main] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:27:40 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:27:40.927 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:27:40.962 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:27:40.968 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product//
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:27:40.982 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:27:40 GMT
+1 < Connection: close
+{"timestamp":"2024-10-09T04:27:40.980+00:00","status":400,"error":"Bad Request","path":"/api/v1/product/"}
+
+23:27:40.989 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:107
+Then status 404
+status code was: 400, expected: 404, response time in milliseconds: 12, url: http://localhost:8081/api/v1/product//, response: 
+{"timestamp":"2024-10-09T04:27:40.980+00:00","status":400,"error":"Bad Request","path":"/api/v1/product/"}
+classpath:api/producto/crear.feature:107
+23:28:04.172 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:28:05.092 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:05.426 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:28:05.459 [main] DEBUG com.intuit.karate - response time in milliseconds: 32
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:28:05 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:28:05.462 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:28:05.490 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:05.496 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product//
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:28:05.501 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:28:05 GMT
+1 < Connection: close
+{"timestamp":"2024-10-09T04:28:05.500+00:00","status":400,"error":"Bad Request","path":"/api/v1/product/"}
+
+23:28:05.503 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:28:05.500+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/v1/product/"
+}
+ 
+23:28:05.505 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:109
+* match response.error == 'Not Found'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Bad Request'
+  'Not Found'
+
+classpath:api/producto/crear.feature:109
+23:28:23.152 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:28:24.019 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:24.360 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:28:24.386 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:28:24 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:28:24.390 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:28:24.422 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:24.430 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product//
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:28:24.435 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:28:24 GMT
+1 < Connection: close
+{"timestamp":"2024-10-09T04:28:24.434+00:00","status":400,"error":"Bad Request","path":"/api/v1/product/"}
+
+23:28:24.437 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:28:24.434+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/v1/product/"
+}
+ 
+23:28:55.796 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:28:56.723 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:57.076 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:28:57.103 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:28:57 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:28:57.106 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:28:57.134 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:28:57.139 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:28:57.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:28:57 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:28:57.142+00:00","status":404,"error":"Not Found","path":"/"}
+
+23:28:57.154 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:104
+Then status 400
+status code was: 404, expected: 400, response time in milliseconds: 4, url: http://localhost:8081, response: 
+{"timestamp":"2024-10-09T04:28:57.142+00:00","status":404,"error":"Not Found","path":"/"}
+classpath:api/producto/crear.feature:104
+23:31:49.797 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:31:50.655 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:50.989 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:31:51.019 [main] DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:31:51 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:31:51.022 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:31:51.053 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:31:51.060 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:31:51.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:31:51 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:31:51.090+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:31:51.099 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:105
+Then status 400
+status code was: 404, expected: 400, response time in milliseconds: 31, url: http://localhost:8081/api/v1/product, response: 
+{"timestamp":"2024-10-09T04:31:51.090+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+classpath:api/producto/crear.feature:105
+23:32:14.388 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:32:15.277 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:32:15.626 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:32:15.654 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:32:15 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:32:15.658 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:32:15.689 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:32:15.704 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:32:15.708 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:32:15 GMT
+1 < Connection: close
+{"timestamp":"2024-10-09T04:32:15.707+00:00","status":400,"error":"Bad Request","path":"/api/v1/product/"}
+
+23:32:15.710 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:32:15.707+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/v1/product/"
+}
+ 
+23:32:32.103 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:32:33.015 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:32:33.351 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:32:33.378 [main] DEBUG com.intuit.karate - response time in milliseconds: 24
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:32:33 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:32:33.381 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:32:33.410 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:32:33.415 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:32:33.421 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:32:33 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:32:33.419+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:32:33.424 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:32:33.419+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+23:33:20.436 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:33:21.361 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:33:21.695 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:33:21.722 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:33:21 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:33:21.726 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:33:21.754 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:33:21.759 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:33:21.765 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:33:21 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:33:21.763+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:33:21.767 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:33:21.763+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+23:33:21.771 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:107
+* match response.status == false
+match failed: EQUALS
+  $ | data types don't match (NUMBER:BOOLEAN)
+  404
+  false
+
+classpath:api/producto/crear.feature:107
+23:34:02.376 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:34:03.254 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:03.588 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:34:03.612 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:34:03 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:34:03.616 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:34:03.645 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:34:03.651 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:34:03.658 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:34:03 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:34:03.655+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:34:03.659 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:34:03.655+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+23:34:03.663 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:107
+* match response.status == false
+match failed: EQUALS
+  $ | data types don't match (NUMBER:BOOLEAN)
+  404
+  false
+
+classpath:api/producto/crear.feature:107
+23:35:47.616 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:35:48.529 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:35:48.882 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:35:48.913 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:35:48 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:35:48.918 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:35:48.953 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:35:48.961 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:35:48.970 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:35:48 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:35:48.966+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:35:48.973 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:35:48.966+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+23:35:48.977 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:107
+* match $ == false
+match failed: EQUALS
+  $ | data types don't match (MAP:BOOLEAN)
+  {"timestamp":"2024-10-09T04:35:48.966+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+  false
+
+classpath:api/producto/crear.feature:107
+23:36:12.994 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:36:13.868 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:36:14.182 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:36:14.212 [main] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:36:14 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:36:14.216 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:36:14.244 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:36:14.250 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:36:14.256 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:36:14 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:36:14.254+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:36:14.259 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:36:14.254+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+23:36:14.262 [main] ERROR com.intuit.karate - classpath:api/producto/crear.feature:107
+* match $ == '#string'
+match failed: EQUALS
+  $ | not a string (MAP:STRING)
+  {"timestamp":"2024-10-09T04:36:14.254+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+  '#string'
+
+classpath:api/producto/crear.feature:107
+23:37:13.988 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:37:14.853 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:15.193 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:37:15.222 [main] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:37:15 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:37:15.226 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:37:15.257 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:37:15.263 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:37:15.271 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:37:15 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:37:15.269+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:37:15.273 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:37:15.269+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
