@@ -17,7 +17,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     * header Content-Type = 'application/json'
 
 
-  @Test-json-200
+  @happypath
   Scenario: Crear un producto de forma exitosa con json como texto
     * def producto =
       """
@@ -79,7 +79,6 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
 
 
   @sadpath
-  @Test-json-400
   Scenario: Crear un producto con datos faltantes
     * def producto_invalido =
       """
@@ -96,8 +95,7 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     * print response
     * match response.message == 'La descripción del producto no fue proporcionada'
 
-  @sadpath
-  @Test-json-404
+
   Scenario: Crear un producto con precio string
     * path ruta_crear
     When method post
@@ -105,8 +103,6 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     * print response
     * match response.error == '#string'
 
-  @sadpath
-  @Test-json-400
   Scenario: Crear un producto con header faltante
     * path ruta_crear,"/"
     And header Accept = ''

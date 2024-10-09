@@ -25,3 +25,6 @@ Feature: Actualizar un producto usando la API /api/v1/product/
 	| { name: 'Iphone Actualizado', description: 'Este es un smartphone de alta gama', price: 9999 } |
 	| { name: 'Iphone 99', description: 'Descripcion Actualizada', price: 9999 }  |
 	| { name: 'Iphone 99', description: 'Este es un smartphone de alta gama', price: 90000 } |
+
+
+

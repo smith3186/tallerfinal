@@ -7,7 +7,7 @@ class ProductosRunner {
     @Karate.Test
     Karate testUsers() {
         return Karate.run("crear")
-                .tags("@sadpath")
+                .tags("@crear")
                 .relativeTo(getClass());
     }
 
