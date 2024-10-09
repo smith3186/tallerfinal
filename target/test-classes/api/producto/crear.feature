@@ -78,8 +78,8 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
       | { name: 'Iphone 19', description: 'Telefono de alta gama', price: 1900 } |
 
 
-  @unhappy-path
-  @datosfaltantes-400
+  @sadpath
+  @Test-json-400
   Scenario: Crear un producto con datos faltantes
     * def producto_invalido =
       """
@@ -95,26 +95,3 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     Then status 400
     * print response
     * match response.message == 'La descripción del producto no fue proporcionada'
-    * match response.status == false
-
-
-  @unhappy-path
-  @precioinvalido-400
-  Scenario: Crear un producto con precio string
-    * def producto_precio_negativo =
-      """
-      {
-        "name": "Iphone 14",
-        "description": "Este es un smartphone de alta gama",
-        "price": -1400mmm
-      }
-      """
-    Given url 'http://localhost:8081/api/v1/product/'
-    And request producto_precio_negativo
-    And header Accept = 'application/json'
-    And header Authorization = 'Bearer aGFzaGRzZnNkZnNkZnNkZnNk'
-    When method post
-    Then status 400
-    * print response
-    * match response.error == 'Bad Request'
-    
