@@ -96,7 +96,6 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     * print response
     * match response.message == 'La descripción del producto no fue proporcionada'
 
-
   @sadpath
   @Test-json-404
   Scenario: Crear un producto con precio string
@@ -105,3 +104,12 @@ Feature: Crear un nuevo producto usando la API /api/v1/product/
     Then status 404
     * print response
     * match response.error == '#string'
+
+  @sadpath
+  @Test-json-400
+  Scenario: Crear un producto con header faltante
+    * path ruta_crear,"/"
+    And header Accept = ''
+    When method post
+    Then status 400
+    * print response

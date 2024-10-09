@@ -3032,3 +3032,175 @@ classpath:api/producto/crear.feature:107
   "path": "/api/v1/product"
 }
  
+23:40:57.002 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:40:57.908 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:58.257 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:40:58.287 [main] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:40:58 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:40:58.290 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:40:58.319 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:58.332 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: 
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:40:58.338 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:40:58 GMT
+1 < Connection: close
+{"timestamp":"2024-10-09T04:40:58.337+00:00","status":400,"error":"Bad Request","path":"/api/v1/product/"}
+
+23:40:58.340 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:40:58.337+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/v1/product/"
+}
+ 
+23:40:58.349 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:40:58.353 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:40:58.360 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:40:58 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:40:58.358+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:40:58.362 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:40:58.358+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+23:41:18.101 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:41:18.964 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:19.311 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Iphone 14"}
+
+23:41:19.338 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:41:19 GMT
+1 < Connection: close
+{"sku":"","status":false,"message":"La descripción del producto no fue proporcionada"}
+
+23:41:19.342 [main] INFO  com.intuit.karate - [print] {
+  "sku": "",
+  "status": false,
+  "message": "La descripción del producto no fue proporcionada"
+}
+ 
+23:41:19.376 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:19.382 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:41:19.389 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+1 < 404
+1 < Vary: Origin
+1 < Vary: Access-Control-Request-Method
+1 < Vary: Access-Control-Request-Headers
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:41:19 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"timestamp":"2024-10-09T04:41:19.387+00:00","status":404,"error":"Not Found","path":"/api/v1/product"}
+
+23:41:19.392 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:41:19.387+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/api/v1/product"
+}
+ 
+23:41:19.402 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:41:19.414 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/api/v1/product/
+1 > Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 > Accept: 
+1 > Content-Type: application/json
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:41:19.419 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 400
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 09 Oct 2024 04:41:19 GMT
+1 < Connection: close
+{"timestamp":"2024-10-09T04:41:19.418+00:00","status":400,"error":"Bad Request","path":"/api/v1/product/"}
+
+23:41:19.421 [main] INFO  com.intuit.karate - [print] {
+  "timestamp": "2024-10-09T04:41:19.418+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/api/v1/product/"
+}
+ 
