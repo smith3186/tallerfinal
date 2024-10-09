@@ -1,0 +1,2442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1e4c3235-14f7-4ad6-8f7e-0374cb2198ab",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>api.producto.recuperar</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-10-09 01:28:58 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Recuperar un producto de forma exitosa</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>Recuperar todos los productos de forma exitosa</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:32]"><span>[3:32]</span> <span>Recuperar un producto con path incorrecto</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:41]"><span>[4:41]</span> <span>Recuperar un producto con metodo incorrecto</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">api/producto/recuperar.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Recuperar un producto usando la API /api/v1/product/</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">recuperar</a><a class="badge badge-primary" href="karate-tags.html">happypath</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Recuperar un producto de forma exitosa</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>387</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8081&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">01:28:57.975 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ruta_crear = &#39;/api/v1/product/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = callonce read(&#39;nuevo.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">350</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">01:28:58.356 &lt;&lt; lock released, cached callonce: read(&#39;nuevo.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">api.producto.nuevo</div>
+      </div>
+      <div class="time-cell passed">337</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8081/api/v1/product/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.4">01:28:58.010 &gt;&gt; lock acquired, begin callonce: read(&#39;nuevo.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { name: &#39;Iphone 12&#39;, description: &#39;Este es un smartphone de alta gama&#39;, price: 1200 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer aGFzaGRzZnNkZnNkZnNkZnNk&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">310</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.8">01:28:58.327 request:
+1 &gt; POST http://localhost:8081/api/v1/product/
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 84
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Iphone 12&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200}
+
+01:28:58.353 response time in milliseconds: 24
+1 &lt; 201
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 09 Oct 2024 06:28:58 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;sku&quot;:&quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,&quot;status&quot;:true,&quot;message&quot;:&quot;El producto fue creado con éxito!&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print result.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">01:28:58.360 [print] {
+  &quot;sku&quot;: &quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,
+  &quot;status&quot;: true,
+  &quot;message&quot;: &quot;El producto fue creado con éxito!&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path ruta_crear,&quot;/&quot;,result.response.sku,&quot;/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer aGFzaGRzZnNkZnNkZnNkZnNk&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">01:28:58.369 request:
+1 &gt; GET http://localhost:8081/api/v1/product/14dabe72-ee8c-4f25-86b8-7bbf3acdd2af/
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:28:58.374 response time in milliseconds: 5
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 09 Oct 2024 06:28:58 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;products&quot;:[{&quot;id&quot;:130,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0}],&quot;status&quot;:true,&quot;message&quot;:&quot;El producto fue encontrado&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">01:28:58.377 [print] {
+  &quot;products&quot;: [
+    {
+      &quot;id&quot;: 130,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    }
+  ],
+  &quot;status&quot;: true,
+  &quot;message&quot;: &quot;El producto fue encontrado&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">recuperar</a><a class="badge badge-primary" href="karate-tags.html">happypath</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">Recuperar todos los productos de forma exitosa</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>30</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8081&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">01:28:58.405 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ruta_crear = &#39;/api/v1/product/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = callonce read(&#39;nuevo.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print result.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">01:28:58.411 [print] {
+  &quot;sku&quot;: &quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,
+  &quot;status&quot;: true,
+  &quot;message&quot;: &quot;El producto fue creado con éxito!&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path ruta_crear,&quot;/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer aGFzaGRzZnNkZnNkZnNkZnNk&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">01:28:58.413 request:
+1 &gt; GET http://localhost:8081/api/v1/product/
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer aGFzaGRzZnNkZnNkZnNkZnNk
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:28:58.428 response time in milliseconds: 14
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 09 Oct 2024 06:28:58 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;products&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Iphone 14&quot;,&quot;sku&quot;:&quot;c9fe0d9b-b760-4f75-9166-84f8a54e4076&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1400.0},{&quot;id&quot;:2,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;13280820-37a9-4104-82f2-28d25947661d&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:3,&quot;name&quot;:&quot;Iphone 15&quot;,&quot;sku&quot;:&quot;764742e5-cd29-48e9-924a-fdd70dc295eb&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1500.0},{&quot;id&quot;:4,&quot;name&quot;:&quot;Iphone 15&quot;,&quot;sku&quot;:&quot;4cd197c3-2ab6-4ef2-a839-7f42ab59e0ea&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1500.0},{&quot;id&quot;:5,&quot;name&quot;:&quot;Iphone 16&quot;,&quot;sku&quot;:&quot;8fb2b302-cd19-4557-ad21-7e9eba222d65&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:1600.0},{&quot;id&quot;:6,&quot;name&quot;:&quot;Iphone 17&quot;,&quot;sku&quot;:&quot;e613e675-509f-4b02-8e82-4f3c83bf9980&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:1700.0},{&quot;id&quot;:7,&quot;name&quot;:&quot;Iphone 18&quot;,&quot;sku&quot;:&quot;e4edec53-426e-49bf-8a04-fda98c8bc369&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:1800.0},{&quot;id&quot;:8,&quot;name&quot;:&quot;Iphone 19&quot;,&quot;sku&quot;:&quot;dba820fe-9714-4b3d-8142-4f0dafde0ae2&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:1900.0},{&quot;id&quot;:9,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;5381ab38-5a99-43f3-bf9f-487b95cff617&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:10,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;696aac2a-3437-436a-b82c-cb6de5244530&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:11,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;0b6409bb-2c27-4c26-8a5b-6ea889742c2a&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:12,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:13,&quot;name&quot;:&quot;Iphone Actualizado&quot;,&quot;sku&quot;:&quot;ab09ae3d-c881-4852-8acf-ae6006627125&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:-9999.0},{&quot;id&quot;:14,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;6751882c-3a3c-43b7-b179-5ca6df54b680&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:15,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;de7e513c-aecc-49a7-bd46-03c3c24c1b94&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:16,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:17,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;4d923382-16ff-4367-ac0e-1f4ec3a617c9&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:18,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;c30bbcb8-7a08-4af2-aec9-d19502d20f90&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:19,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;52e7b344-7469-4896-a204-bdfe4e70e856&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:20,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;2191197d-754f-4648-9378-e77ed08eb7f3&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:21,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:22,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;bef7122c-147f-49ab-bd72-2b54c23a4edd&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:23,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;f68b2642-6ac1-45a8-859b-04da47054c0a&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:24,&quot;name&quot;:&quot;Iphone Actualizado&quot;,&quot;sku&quot;:&quot;f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:25,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;11df6ed8-4d6c-46a9-841b-8e4d5b6d760c&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:26,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;ae1a2e1d-fafc-41b7-aa20-c8745fd5c009&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:27,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;a5c21aa0-850c-4782-8cb2-d15d6c409188&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:28,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;bce132ad-3e2f-4e8b-8228-6b9dc7a08537&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:29,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;ad26fb78-a00f-46cd-bbb9-d9af827d814a&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:30,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;8d75bd4d-8218-481f-b1e5-5458ef1fd6e5&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:31,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;db4a1199-c1c6-4276-a346-227c2b64dd37&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:32,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;984f8260-e211-4d21-a57d-ab5dffcf0782&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:33,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;08b0c2a2-9189-4a3f-9ac4-c6e8e15ea766&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:34,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;0e54f489-74c9-4aed-8868-7cfa264df41c&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:35,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;3c63055e-b245-43c5-8226-dbc4a8db7b6f&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:36,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;9f8cc428-46e0-469d-b2fc-33ccd516a433&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:37,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;a8229a78-697e-4c7e-b957-ba75ae434148&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:38,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;f78bfe3f-583b-4d29-b599-05f2516be730&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:39,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;1cd48678-cc62-4189-a0f0-e8f6a61b127b&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:40,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;e1aa2ad7-25f8-4112-a30d-de195883f51f&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:41,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;2cd7f4e5-bb03-4f8c-8378-bb274989ea0e&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:42,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;a971fdf8-6bb2-442a-a67b-ad213e88182f&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:43,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;0bbfac20-eba2-42be-ac82-c3a92b60b1d0&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:44,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;4597bda1-4dbf-42ee-82aa-6639cd2c80f4&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:45,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;8d653719-441f-42b3-a8ba-7710edc5ef52&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:46,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;21704507-6efd-4322-85da-21aa7d9ed057&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:47,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;59620d1c-6e3a-46cb-a23e-1f607937af25&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:48,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:49,&quot;name&quot;:&quot;Iphone Actualizado&quot;,&quot;sku&quot;:&quot;b3ca749e-1347-454b-8c52-392dfd041b7f&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:50,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;0c8b540b-41e1-4e88-97e7-fb39ae4761bb&quot;,&quot;description&quot;:&quot;Descripcion Actualizada&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:51,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;dad537e8-0eaf-4a00-8c7f-aa595881bc94&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:90000.0},{&quot;id&quot;:52,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;a0a16200-a90b-45d7-9d64-014ba26f4879&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:53,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;3a75e325-95d6-47d9-b924-c9286d4974c7&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:54,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;7a916fc4-94b2-45be-b7c9-b7eb3cfd9c39&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:55,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;79fc1333-d72b-450c-8470-e2884b3b3221&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:56,&quot;name&quot;:&quot;Iphone Actualizado&quot;,&quot;sku&quot;:&quot;a2f6e39a-c593-4e84-a687-a9a00c9518be&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:57,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;5d179ada-6b13-4c65-aaf8-252985c5aeb9&quot;,&quot;description&quot;:&quot;Descripcion Actualizada&quot;,&quot;price&quot;:9999.0},{&quot;id&quot;:58,&quot;name&quot;:&quot;Iphone 99&quot;,&quot;sku&quot;:&quot;e77b5ac1-947d-44d1-adb2-04a156be704a&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:90000.0},{&quot;id&quot;:68,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;d106a1a6-a0ec-4132-abe6-d97cdecc1a47&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:69,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;8c5284cb-e3c7-4579-8951-3bda1d0e8a3c&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:70,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;ab8373e6-d59d-41e7-a14d-9d478e3eba81&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:71,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;054be4e0-12a7-46f1-a843-dc91fb3ce452&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:72,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;a26a79ed-cc53-429e-bf08-c8ef83f5586a&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:73,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;9063a9f1-32ed-4ea0-af57-6407af6de611&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:74,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;0f661091-0b51-4768-bced-07be4f8029f7&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:75,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;0adb6ebd-7bfd-4601-9103-b1946fe7df87&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:76,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;0631d288-009e-431a-aaea-22a5ac07b183&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:77,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;5a250448-6e76-4832-ac40-91b4a061e6c0&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:78,&quot;name&quot;:&quot;Iphone 7000&quot;,&quot;sku&quot;:&quot;615140e5-599d-430b-b822-11900627b571&quot;,&quot;description&quot;:&quot;Telefono de alta gama&quot;,&quot;price&quot;:5500.0},{&quot;id&quot;:90,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;8e58fd6f-19f4-4100-9aff-7020f90e4740&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:91,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;4184dc23-59d7-4ead-9370-869391692f03&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:92,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;ad7afca2-daec-4ebc-80dd-ef50ac1315c2&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:93,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;044fba7a-790d-4c10-9ad1-d72cf9457bbc&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:94,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;a072cc4e-9211-462e-a2c1-23d5c74e17ec&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:95,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;b6bfc4ef-848a-466e-a746-2e33fdf73be3&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:96,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;c4d3cfa8-89c0-433b-a8d4-90e0ad30b505&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:97,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;a3ad0e52-1d7c-490b-8038-3bf98e64f993&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:98,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;8192bc8c-2618-4dc6-bc13-877e2f4dae8f&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:99,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;83894cde-e99f-49f3-b417-ffcc079e32f7&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:100,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:101,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;4800e180-b485-461b-86d3-c017e1d4b824&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:102,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;d4938ca1-7cf1-414d-a3c8-caf2b8b02187&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:103,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;47c979c5-d46a-42df-8688-dceda5a73612&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:104,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;44e41ab0-8aad-439d-a578-d5278450d6c5&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:105,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;b60454b6-3a65-43e2-b29d-1d708cc9feb2&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:106,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;ed219d21-aa4a-44e4-b3b9-de730fc21a5c&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:107,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;6e3845f1-7013-4f7e-b712-21f7781220ac&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:108,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;c46c79fe-0431-47f6-aa50-528dff3cc62d&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:109,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;0831c9ca-a9ec-4813-a5e9-f033c130772b&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:110,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;27a536e0-e7ae-4d30-a191-51bbd92e45c0&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:111,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;6ad472c7-7c49-42ff-a08b-250732e07cc5&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:112,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;e9ef0f99-b1ee-47c4-a39b-04db7c67f5f8&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:113,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;b350a626-ed3f-4ecf-91dd-86d63b482e14&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:114,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;2792f415-d230-40c2-add3-20e63ef5b935&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:115,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;f631b4e7-40b1-40f8-b333-77118ada4283&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:116,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;cae18063-85c2-4886-8c69-0c3bf6feb556&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:117,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;9db15791-767e-4911-9780-daff15590b5e&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:118,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;5c0d1f6f-d9b0-4f7c-8178-5ee8e283b18e&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:119,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;fc2466a5-b6ad-45c1-a200-9d2b4b284f2b&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:120,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;301ca483-ab67-46dd-b58c-0104653df07c&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:121,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;9b82d4b1-3667-4732-b7d0-5d149e8e4879&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:122,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;627ec53a-f484-4c94-8089-6dbea6f00f7b&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:123,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;665d53fc-8dba-49e8-8f45-86d46c6621db&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:124,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;52d404d0-1a7a-4ea6-95fb-1368dccb982c&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:125,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;e2141450-d2b8-48bb-9da2-363ecbb092ed&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:126,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;a4ba7897-6820-4d46-955d-78ad3b454d49&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:127,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;6b629948-0c6a-4e39-be12-28e65807613f&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:128,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;65f66c07-2fec-4a1f-9450-94970fae85ee&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:129,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;ee448573-766e-451e-ac58-e1def5b92bd5&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0},{&quot;id&quot;:130,&quot;name&quot;:&quot;Iphone 12&quot;,&quot;sku&quot;:&quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,&quot;description&quot;:&quot;Este es un smartphone de alta gama&quot;,&quot;price&quot;:1200.0}],&quot;status&quot;:true,&quot;message&quot;:&quot;Se encontró 110 producto(s)&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">01:28:58.437 [print] {
+  &quot;products&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Iphone 14&quot;,
+      &quot;sku&quot;: &quot;c9fe0d9b-b760-4f75-9166-84f8a54e4076&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1400.0
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;13280820-37a9-4104-82f2-28d25947661d&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;name&quot;: &quot;Iphone 15&quot;,
+      &quot;sku&quot;: &quot;764742e5-cd29-48e9-924a-fdd70dc295eb&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1500.0
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;name&quot;: &quot;Iphone 15&quot;,
+      &quot;sku&quot;: &quot;4cd197c3-2ab6-4ef2-a839-7f42ab59e0ea&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1500.0
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;name&quot;: &quot;Iphone 16&quot;,
+      &quot;sku&quot;: &quot;8fb2b302-cd19-4557-ad21-7e9eba222d65&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 1600.0
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;name&quot;: &quot;Iphone 17&quot;,
+      &quot;sku&quot;: &quot;e613e675-509f-4b02-8e82-4f3c83bf9980&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 1700.0
+    },
+    {
+      &quot;id&quot;: 7,
+      &quot;name&quot;: &quot;Iphone 18&quot;,
+      &quot;sku&quot;: &quot;e4edec53-426e-49bf-8a04-fda98c8bc369&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 1800.0
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;name&quot;: &quot;Iphone 19&quot;,
+      &quot;sku&quot;: &quot;dba820fe-9714-4b3d-8142-4f0dafde0ae2&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 1900.0
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;5381ab38-5a99-43f3-bf9f-487b95cff617&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;696aac2a-3437-436a-b82c-cb6de5244530&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;0b6409bb-2c27-4c26-8a5b-6ea889742c2a&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;753e4052-7ae2-4e99-b6f9-bfb11fd4b7fc&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 13,
+      &quot;name&quot;: &quot;Iphone Actualizado&quot;,
+      &quot;sku&quot;: &quot;ab09ae3d-c881-4852-8acf-ae6006627125&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: -9999.0
+    },
+    {
+      &quot;id&quot;: 14,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;6751882c-3a3c-43b7-b179-5ca6df54b680&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 15,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;de7e513c-aecc-49a7-bd46-03c3c24c1b94&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 16,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;1c8dbe3e-63e4-401a-b762-4b31ffc6c8c5&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 17,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;4d923382-16ff-4367-ac0e-1f4ec3a617c9&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 18,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;c30bbcb8-7a08-4af2-aec9-d19502d20f90&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 19,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;52e7b344-7469-4896-a204-bdfe4e70e856&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 20,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;2191197d-754f-4648-9378-e77ed08eb7f3&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 21,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;098e11fb-0f54-4ae0-80cc-bdeb17e3b4b5&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 22,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;bef7122c-147f-49ab-bd72-2b54c23a4edd&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 23,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;f68b2642-6ac1-45a8-859b-04da47054c0a&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 24,
+      &quot;name&quot;: &quot;Iphone Actualizado&quot;,
+      &quot;sku&quot;: &quot;f1bf5ef7-9bc9-4298-a9a8-c1315ee14e73&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 25,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;11df6ed8-4d6c-46a9-841b-8e4d5b6d760c&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 26,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;ae1a2e1d-fafc-41b7-aa20-c8745fd5c009&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 27,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;a5c21aa0-850c-4782-8cb2-d15d6c409188&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 28,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;bce132ad-3e2f-4e8b-8228-6b9dc7a08537&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 29,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;ad26fb78-a00f-46cd-bbb9-d9af827d814a&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 30,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;8d75bd4d-8218-481f-b1e5-5458ef1fd6e5&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 31,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;db4a1199-c1c6-4276-a346-227c2b64dd37&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 32,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;984f8260-e211-4d21-a57d-ab5dffcf0782&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 33,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;08b0c2a2-9189-4a3f-9ac4-c6e8e15ea766&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 34,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;0e54f489-74c9-4aed-8868-7cfa264df41c&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 35,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;3c63055e-b245-43c5-8226-dbc4a8db7b6f&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 36,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;9f8cc428-46e0-469d-b2fc-33ccd516a433&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 37,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;a8229a78-697e-4c7e-b957-ba75ae434148&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 38,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;f78bfe3f-583b-4d29-b599-05f2516be730&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 39,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;1cd48678-cc62-4189-a0f0-e8f6a61b127b&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 40,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;e1aa2ad7-25f8-4112-a30d-de195883f51f&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 41,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;2cd7f4e5-bb03-4f8c-8378-bb274989ea0e&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 42,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;a971fdf8-6bb2-442a-a67b-ad213e88182f&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 43,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;0bbfac20-eba2-42be-ac82-c3a92b60b1d0&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 44,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;4597bda1-4dbf-42ee-82aa-6639cd2c80f4&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 45,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;8d653719-441f-42b3-a8ba-7710edc5ef52&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 46,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;21704507-6efd-4322-85da-21aa7d9ed057&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 47,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;59620d1c-6e3a-46cb-a23e-1f607937af25&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 48,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;c9f2f92c-8d5c-4ff1-b97c-f4f5b1b87d7a&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 49,
+      &quot;name&quot;: &quot;Iphone Actualizado&quot;,
+      &quot;sku&quot;: &quot;b3ca749e-1347-454b-8c52-392dfd041b7f&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 50,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;0c8b540b-41e1-4e88-97e7-fb39ae4761bb&quot;,
+      &quot;description&quot;: &quot;Descripcion Actualizada&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 51,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;dad537e8-0eaf-4a00-8c7f-aa595881bc94&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 90000.0
+    },
+    {
+      &quot;id&quot;: 52,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;a0a16200-a90b-45d7-9d64-014ba26f4879&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 53,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;3a75e325-95d6-47d9-b924-c9286d4974c7&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 54,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;7a916fc4-94b2-45be-b7c9-b7eb3cfd9c39&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 55,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;79fc1333-d72b-450c-8470-e2884b3b3221&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 56,
+      &quot;name&quot;: &quot;Iphone Actualizado&quot;,
+      &quot;sku&quot;: &quot;a2f6e39a-c593-4e84-a687-a9a00c9518be&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 57,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;5d179ada-6b13-4c65-aaf8-252985c5aeb9&quot;,
+      &quot;description&quot;: &quot;Descripcion Actualizada&quot;,
+      &quot;price&quot;: 9999.0
+    },
+    {
+      &quot;id&quot;: 58,
+      &quot;name&quot;: &quot;Iphone 99&quot;,
+      &quot;sku&quot;: &quot;e77b5ac1-947d-44d1-adb2-04a156be704a&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 90000.0
+    },
+    {
+      &quot;id&quot;: 68,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;d106a1a6-a0ec-4132-abe6-d97cdecc1a47&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 69,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;8c5284cb-e3c7-4579-8951-3bda1d0e8a3c&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 70,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;ab8373e6-d59d-41e7-a14d-9d478e3eba81&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 71,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;054be4e0-12a7-46f1-a843-dc91fb3ce452&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 72,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;a26a79ed-cc53-429e-bf08-c8ef83f5586a&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 73,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;9063a9f1-32ed-4ea0-af57-6407af6de611&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 74,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;0f661091-0b51-4768-bced-07be4f8029f7&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 75,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;0adb6ebd-7bfd-4601-9103-b1946fe7df87&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 76,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;0631d288-009e-431a-aaea-22a5ac07b183&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 77,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;5a250448-6e76-4832-ac40-91b4a061e6c0&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 78,
+      &quot;name&quot;: &quot;Iphone 7000&quot;,
+      &quot;sku&quot;: &quot;615140e5-599d-430b-b822-11900627b571&quot;,
+      &quot;description&quot;: &quot;Telefono de alta gama&quot;,
+      &quot;price&quot;: 5500.0
+    },
+    {
+      &quot;id&quot;: 90,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;8e58fd6f-19f4-4100-9aff-7020f90e4740&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 91,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;4184dc23-59d7-4ead-9370-869391692f03&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 92,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;ad7afca2-daec-4ebc-80dd-ef50ac1315c2&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 93,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;044fba7a-790d-4c10-9ad1-d72cf9457bbc&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 94,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;a072cc4e-9211-462e-a2c1-23d5c74e17ec&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 95,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;b6bfc4ef-848a-466e-a746-2e33fdf73be3&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 96,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;c4d3cfa8-89c0-433b-a8d4-90e0ad30b505&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 97,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;a3ad0e52-1d7c-490b-8038-3bf98e64f993&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 98,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;8192bc8c-2618-4dc6-bc13-877e2f4dae8f&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 99,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;83894cde-e99f-49f3-b417-ffcc079e32f7&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 100,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;8a70c7cc-8b1f-40e2-a7c4-71da9fd846fe&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 101,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;4800e180-b485-461b-86d3-c017e1d4b824&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 102,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;d4938ca1-7cf1-414d-a3c8-caf2b8b02187&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 103,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;47c979c5-d46a-42df-8688-dceda5a73612&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 104,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;44e41ab0-8aad-439d-a578-d5278450d6c5&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 105,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;b60454b6-3a65-43e2-b29d-1d708cc9feb2&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 106,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;ed219d21-aa4a-44e4-b3b9-de730fc21a5c&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 107,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;6e3845f1-7013-4f7e-b712-21f7781220ac&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 108,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;c46c79fe-0431-47f6-aa50-528dff3cc62d&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 109,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;0831c9ca-a9ec-4813-a5e9-f033c130772b&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 110,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;27a536e0-e7ae-4d30-a191-51bbd92e45c0&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 111,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;6ad472c7-7c49-42ff-a08b-250732e07cc5&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 112,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;e9ef0f99-b1ee-47c4-a39b-04db7c67f5f8&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 113,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;b350a626-ed3f-4ecf-91dd-86d63b482e14&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 114,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;2792f415-d230-40c2-add3-20e63ef5b935&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 115,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;f631b4e7-40b1-40f8-b333-77118ada4283&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 116,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;cae18063-85c2-4886-8c69-0c3bf6feb556&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 117,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;9db15791-767e-4911-9780-daff15590b5e&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 118,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;5c0d1f6f-d9b0-4f7c-8178-5ee8e283b18e&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 119,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;fc2466a5-b6ad-45c1-a200-9d2b4b284f2b&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 120,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;301ca483-ab67-46dd-b58c-0104653df07c&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 121,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;9b82d4b1-3667-4732-b7d0-5d149e8e4879&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 122,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;627ec53a-f484-4c94-8089-6dbea6f00f7b&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 123,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;665d53fc-8dba-49e8-8f45-86d46c6621db&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 124,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;52d404d0-1a7a-4ea6-95fb-1368dccb982c&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 125,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;e2141450-d2b8-48bb-9da2-363ecbb092ed&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 126,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;a4ba7897-6820-4d46-955d-78ad3b454d49&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 127,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;6b629948-0c6a-4e39-be12-28e65807613f&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 128,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;65f66c07-2fec-4a1f-9450-94970fae85ee&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 129,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;ee448573-766e-451e-ac58-e1def5b92bd5&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    },
+    {
+      &quot;id&quot;: 130,
+      &quot;name&quot;: &quot;Iphone 12&quot;,
+      &quot;sku&quot;: &quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,
+      &quot;description&quot;: &quot;Este es un smartphone de alta gama&quot;,
+      &quot;price&quot;: 1200.0
+    }
+  ],
+  &quot;status&quot;: true,
+  &quot;message&quot;: &quot;Se encontró 110 producto(s)&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">recuperar</a><a class="badge badge-primary" href="karate-tags.html">sadpath</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:32]</span>
+                <span class="scenario-name">Recuperar un producto con path incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8081&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">01:28:58.447 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ruta_crear = &#39;/api/v1/product/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = callonce read(&#39;nuevo.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print result.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">01:28:58.451 [print] {
+  &quot;sku&quot;: &quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,
+  &quot;status&quot;: true,
+  &quot;message&quot;: &quot;El producto fue creado con éxito!&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path ruta_crear</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">01:28:58.454 request:
+1 &gt; GET http://localhost:8081/api/v1/product
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:28:58.458 response time in milliseconds: 3
+1 &lt; 404
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 09 Oct 2024 06:28:58 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2024-10-09T06:28:58.457+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/product&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">01:28:58.459 [print] {
+  &quot;timestamp&quot;: &quot;2024-10-09T06:28:58.457+00:00&quot;,
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Not Found&quot;,
+  &quot;path&quot;: &quot;/api/v1/product&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.error == &#39;Not Found&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:41]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">recuperar</a><a class="badge badge-primary" href="karate-tags.html">sadpath</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:41]</span>
+                <span class="scenario-name">Recuperar un producto con metodo incorrecto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>10</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:41]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8081&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">01:28:58.468 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ruta_crear = &#39;/api/v1/product/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = callonce read(&#39;nuevo.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print result.response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">01:28:58.471 [print] {
+  &quot;sku&quot;: &quot;14dabe72-ee8c-4f25-86b8-7bbf3acdd2af&quot;,
+  &quot;status&quot;: true,
+  &quot;message&quot;: &quot;El producto fue creado con éxito!&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path ruta_crear,&quot;/&quot;,result.response.sku,&quot;/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.44">01:28:58.473 request:
+1 &gt; POST http://localhost:8081/api/v1/product/14dabe72-ee8c-4f25-86b8-7bbf3acdd2af/
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:28:58.477 response time in milliseconds: 4
+1 &lt; 405
+1 &lt; Allow: DELETE, PATCH, PUT, GET
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 09 Oct 2024 06:28:58 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2024-10-09T06:28:58.476+00:00&quot;,&quot;status&quot;:405,&quot;error&quot;:&quot;Method Not Allowed&quot;,&quot;path&quot;:&quot;/api/v1/product/14dabe72-ee8c-4f25-86b8-7bbf3acdd2af/&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 405</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">01:28:58.479 [print] {
+  &quot;timestamp&quot;: &quot;2024-10-09T06:28:58.476+00:00&quot;,
+  &quot;status&quot;: 405,
+  &quot;error&quot;: &quot;Method Not Allowed&quot;,
+  &quot;path&quot;: &quot;/api/v1/product/14dabe72-ee8c-4f25-86b8-7bbf3acdd2af/&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.error == &#39;Method Not Allowed&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
