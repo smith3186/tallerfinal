@@ -30,7 +30,7 @@ Feature: Eliminar un producto usando la API /api/v1/product/
     Given path ruta_crear,"/",result.response.sku,"/"
     And header Accept = 'applicationjson'
     When method delete
-    Then status 406
+    Then status 404
     * print response
 
   @sadpath
